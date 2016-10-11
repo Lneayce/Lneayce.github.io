@@ -42,7 +42,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo,github,coding," />
 
 
 
@@ -58,15 +58,19 @@
 
 
 
-<meta name="description" content="i almost there, hope to meet u again...~^~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shambels by N">
-<meta property="og:url" content="https://Lneayce.github.io/index.html">
+<meta name="description" content="前言在上一篇博文中, 搭建成了 hexo 博客, 设置好了 Next 主题但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)
+ 国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部署 hexo 到 github 和 coding 上">
+<meta property="og:url" content="https://Lneayce.github.io/2016/10/11/put-blog-both-coding-github/index.html">
 <meta property="og:site_name" content="Shambels by N">
-<meta property="og:description" content="i almost there, hope to meet u again...~^~">
+<meta property="og:description" content="前言在上一篇博文中, 搭建成了 hexo 博客, 设置好了 Next 主题但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)
+ 国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333">
+<meta property="og:updated_time" content="2016-10-11T09:15:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shambels by N">
-<meta name="twitter:description" content="i almost there, hope to meet u again...~^~">
+<meta name="twitter:title" content="部署 hexo 到 github 和 coding 上">
+<meta name="twitter:description" content="前言在上一篇博文中, 搭建成了 hexo 博客, 设置好了 Next 主题但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)
+ 国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333">
 
 
 
@@ -87,10 +91,10 @@
 
 
 
-  <link rel="canonical" href="https://Lneayce.github.io/"/>
+  <link rel="canonical" href="https://Lneayce.github.io/2016/10/11/put-blog-both-coding-github/"/>
 
 
-  <title> Shambels by N </title>
+  <title> 部署 hexo 到 github 和 coding 上 | Shambels by N </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-hk">
@@ -111,9 +115,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -220,9 +222,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -242,10 +244,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/10/11/put-blog-both-coding-github/" itemprop="url">
-                  部署 hexo 到 github 和 coding 上
-                </a>
+                部署 hexo 到 github 和 coding 上
               
             
           </h1>
@@ -285,262 +284,80 @@
       
 
       
-        
-          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在<a href="">上一篇博文</a>中, 搭建成了 hexo 博客, 设置好了 Next 主题<br>但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在<a href="">上一篇博文</a>中, 搭建成了 hexo 博客, 设置好了 Next 主题<br>但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)</p>
 <p> 国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/11/put-blog-both-coding-github/#more" rel="contents">
-              閱讀全文 &raquo;
-            </a>
-          </div>
+<a id="more"></a>
+<h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
+<h1 id="好了-开始"><a href="#好了-开始" class="headerlink" title="好了, 开始."></a>好了, 开始.</h1><ol>
+<li>因为我是不同的邮箱注册了 coding, 所以好像我要重新生成个 sshkey…</li>
+<li>然后添加到 coding 的 sshkey 中</li>
+<li>验证…..额….失败…. <blockquote>
+<p>经过几次重复上面操作确认步奏无误后, 还是不行, 在首次连接时候会提示:<br>Warning: Permanently added ‘git.coding.net,14.215.101.70’ (RSA) to the list of known hosts.<br>Permission denied (publickey).<br>进到这个 known hosts 查看到最后一条记录, 是 coding 的, 但是后面跟着的 rsa 是和 github 一样, 说明那个 config 文件没有配置正确, git coding 时用了 github 的 key, 看到它连的是 git.coding.net , 将配置文件中的 coding.net 改成 git.coding.net, 再试, 成功</p>
+</blockquote>
+</li>
+<li>好了, 这回成功了….至此, 第一篇博文的部分完成(之后分流到七牛的还要参考下这个), 我们看看<a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">第二篇</a>的接下去要怎么弄, 下面的都是按照这个博文来的, 有问题会详细说, 没问题就直接过</li>
+<li>嗯, 新建项目, 照之前 github 方式走一遍…</li>
+<li>建好项目后, 进入站点的文件夹(也就是你的博客放在哪个文件夹了, 之前创建博客的那个文件夹), 改配置文件_config.yml</li>
+<li></li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/11/初次使用-hexo-搭建博客过程以及碰到的坑/" itemprop="url">
-                   初次使用 hexo 搭建博客过程以及碰到的坑
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-10-11T09:51:44+08:00" content="2016-10-11">
-              2016-10-11
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/使用/" itemprop="url" rel="index">
-                    <span itemprop="name">使用</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
           
-
+            <a href="/tags/github/" rel="tag">#github</a>
           
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/coding/" rel="tag">#coding</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h1 id="首先搭建博客"><a href="#首先搭建博客" class="headerlink" title="首先搭建博客"></a>首先搭建博客</h1><p>搭建时候肯定是搜别人是怎么搭建的啦~ 但是本好像有个不知道是好是坏的习惯, 要参考几个博主的搭建… 这个会不会有点浪费时间, 其实我一直想是看一篇了先去跟着做了再出问题再看其他的, 不知道这算不算一种强迫症诶….</p>
-<p>好了, 开始, 我是先参照<a href="https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/#more">这个博主的过程</a>做的, 里面还提到了<del>官方教程</del>, 这个之前我也看了, 但是我感觉看别人做的发教程的话, 也许能绕过一些坑.</p>
-<h2 id="之间碰到的坑"><a href="#之间碰到的坑" class="headerlink" title="之间碰到的坑"></a>之间碰到的坑</h2><p>弄着弄着, 到 SSHKey 的时候, 因为之前记得在 Github 上 Add 过一次, 就没弄, 后来发现不行, 之前弄的好像是单独在一个文件夹里设定的邮箱, 和全局的 git 不同导致的在其他地方用不了? 反正我是重新弄了一个 key 传上去, 才 OK. (有时候打开 Setting 那地方会死活进不去, 过一会就好了, 我觉得是我的网络的原因吧:()</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/11/初次使用-hexo-搭建博客过程以及碰到的坑/#more" rel="contents">
-              閱讀全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/11/初次使用-hexo-搭建博客过程以及碰到的坑/" rel="next" title=" 初次使用 hexo 搭建博客过程以及碰到的坑">
+                <i class="fa fa-chevron-left"></i>  初次使用 hexo 搭建博客过程以及碰到的坑
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/10/hello-world/" itemprop="url">
-                  Hi, There ^~^
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-10-10T17:24:46+08:00" content="2016-10-10">
-              2016-10-10
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -548,6 +365,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -567,8 +388,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -629,6 +459,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#找资料"><span class="nav-number">1.1.</span> <span class="nav-text">找资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#好了-开始"><span class="nav-number">2.</span> <span class="nav-text">好了, 开始.</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -732,6 +573,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 

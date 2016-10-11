@@ -1,0 +1,643 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo,坑,博客,安装," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="首先搭建博客搭建时候肯定是搜别人是怎么搭建的啦~ 但是本好像有个不知道是好是坏的习惯, 要参考几个博主的搭建… 这个会不会有点浪费时间, 其实我一直想是看一篇了先去跟着做了再出问题再看其他的, 不知道这算不算一种强迫症诶….
+好了, 开始, 我是先参照这个博主的过程做的, 里面还提到了官方教程, 这个之前我也看了, 但是我感觉看别人做的发教程的话, 也许能绕过一些坑.
+之间碰到的坑弄着弄着, 到">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" 初次使用 hexo 搭建博客过程以及碰到的坑">
+<meta property="og:url" content="https://Lneayce.github.io/2016/10/11/初次使用-hexo-搭建博客过程以及碰到的坑/index.html">
+<meta property="og:site_name" content="Shambels by N">
+<meta property="og:description" content="首先搭建博客搭建时候肯定是搜别人是怎么搭建的啦~ 但是本好像有个不知道是好是坏的习惯, 要参考几个博主的搭建… 这个会不会有点浪费时间, 其实我一直想是看一篇了先去跟着做了再出问题再看其他的, 不知道这算不算一种强迫症诶….
+好了, 开始, 我是先参照这个博主的过程做的, 里面还提到了官方教程, 这个之前我也看了, 但是我感觉看别人做的发教程的话, 也许能绕过一些坑.
+之间碰到的坑弄着弄着, 到">
+<meta property="og:updated_time" content="2016-10-11T07:27:51.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content=" 初次使用 hexo 搭建博客过程以及碰到的坑">
+<meta name="twitter:description" content="首先搭建博客搭建时候肯定是搜别人是怎么搭建的啦~ 但是本好像有个不知道是好是坏的习惯, 要参考几个博主的搭建… 这个会不会有点浪费时间, 其实我一直想是看一篇了先去跟着做了再出问题再看其他的, 不知道这算不算一种强迫症诶….
+好了, 开始, 我是先参照这个博主的过程做的, 里面还提到了官方教程, 这个之前我也看了, 但是我感觉看别人做的发教程的话, 也许能绕过一些坑.
+之间碰到的坑弄着弄着, 到">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="https://Lneayce.github.io/2016/10/11/初次使用-hexo-搭建博客过程以及碰到的坑/"/>
+
+
+  <title>  初次使用 hexo 搭建博客过程以及碰到的坑 | Shambels by N </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-hk">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Shambels by N</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">U see? there?</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首頁
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分類
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            關於
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            歸檔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            標籤
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                 初次使用 hexo 搭建博客过程以及碰到的坑
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-11T09:51:44+08:00" content="2016-10-11">
+              2016-10-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/使用/" itemprop="url" rel="index">
+                    <span itemprop="name">使用</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="首先搭建博客"><a href="#首先搭建博客" class="headerlink" title="首先搭建博客"></a>首先搭建博客</h1><p>搭建时候肯定是搜别人是怎么搭建的啦~ 但是本好像有个不知道是好是坏的习惯, 要参考几个博主的搭建… 这个会不会有点浪费时间, 其实我一直想是看一篇了先去跟着做了再出问题再看其他的, 不知道这算不算一种强迫症诶….</p>
+<p>好了, 开始, 我是先参照<a href="https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="external">这个博主的过程</a>做的, 里面还提到了<del>官方教程</del>, 这个之前我也看了, 但是我感觉看别人做的发教程的话, 也许能绕过一些坑.</p>
+<h2 id="之间碰到的坑"><a href="#之间碰到的坑" class="headerlink" title="之间碰到的坑"></a>之间碰到的坑</h2><p>弄着弄着, 到 SSHKey 的时候, 因为之前记得在 Github 上 Add 过一次, 就没弄, 后来发现不行, 之前弄的好像是单独在一个文件夹里设定的邮箱, 和全局的 git 不同导致的在其他地方用不了? 反正我是重新弄了一个 key 传上去, 才 OK. (有时候打开 Setting 那地方会死活进不去, 过一会就好了, 我觉得是我的网络的原因吧:()</p>
+<a id="more"></a>
+<p>好的, 到这里还没有什么大问题, 接着, 要-装逼啦-装 hexo 啦~~~<br>诶? 怎么卡在什么 sill 那个地方不动了…. 看网速, 0~1k… ㄟ( ▔, ▔ )ㄏ<br>只好设置全局代理看看…. 不过貌似听说终端走不了 ss 代理? 反正每切一次都能跳一下, 实在跳不动了, 我只能 ctrl + C 断掉再来了…<br> <strong>注意: 断掉再重新安装的话会利用之前下载的那些缓存, 而不是从头下载</strong><br> <em>可还是慢的不行啊…</em><br> 于是乎, 我又找找有没有人这么慢的, 就找到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">这个博主</a>, 他是 Windows 系统, 不过也差不多啦, 里面说的在 coding 上也部署上去我准备也想试试. 里面说到了用国内淘宝的镜像来下载, 我这里的结果是_<em> ERROR xxxxxxxxx</em> 啥的, 不记得了, 好像意思是少了什么?? 看来是走不通<br> 然后, 又找到了<a href="http://www.jianshu.com/p/fd878edb95e7" target="_blank" rel="external">这个博主</a>, 对了, 是它提到了官方安装, 第一个那个没提到, 提到的是 Next 主题的官方安装, 这里用的是<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure></p>
+<p> 好像有好点吧, 但是还是有点慢, 就扔着不管了…反正就那么以上步奏折腾折腾, 断了重新, 再断再重新, 终于弄好了(◎_◎;)</p>
+<p> 嗯, 接下来再继续按第一个博主的弄, hexo init, npm install…<br> <strong>慢着…怎么 init 又好久…</strong><br> <strong>这里在自己的文件夹里 hexo init 的时候, 如果你要中断的话一定要清空文件夹里的东西或者删了文件夹重新建吧</strong><br> 因为这里中断的话, 再执行 hexo 命令它就不认了, 说这个文件夹没有班底 hexo, 大概是你断掉了以后 hexo 的管理和这个文件夹断了吧??</p>
+<p> 这样又反复弄了几次, 诶…终于好了…<br> npm install 也 OK ~~&lt;(▰˘◡˘▰)&gt;</p>
+<p> 后面的就一路过去没问题了~</p>
+<h1 id="安装主题-Next"><a href="#安装主题-Next" class="headerlink" title="安装主题 Next"></a>安装主题 Next</h1><p>对, 这个很简单, 按照 Next 作者的弄就 OK 了, 就是从 github 上下载 repo 比较久, 耐心点<br>里面的很多配置都有提到. 顺便说下, 博客底部就可以看哪些博客是用什么主题, 我这里是用 pisces scheme, 诶? 双鱼?~</p>
+<p>之后就 OK 啦~ 没什么大问题了, 要是洞 CSS 的话还能在其他的配置文件那里自己设定样式, 像我就想让背景换暗色系…(话说作者这个说法在一年前都说了到现在都没弄啊啊啊…)</p>
+<p>然后又一遍 goo, 恩, 可以, 有人做过的, 自己搜下 ‘hexo next 改背景’ 找找就有了,<br>我搜到的一些:</p>
+<blockquote>
+<p>在 NexT 主题的 github 的 issues 里，我找到了如何自定义一些页面样式的方法，作者 IISSNan 很贴心的在主题的 “\source\css_custom\” 文件夹下放了一个 custom.styl 文件，可以让用户自己在里面写 CSS 代码以个性化自己的博客。<br>于是我找到这个文件，并找到一张去年在三亚拍的大海照片用作背景，开始编写代码了！<br>首先我尝试输入了如下的 CSS 代码，主要是来测试一下这个 custom.styl 是否真的有效：<br>background-image:url(/images/background.jpg);<br>background-repeat: no-repeat;<br>background-attachment:fixed;<br>background-position:50% 50%; </p>
+</blockquote>
+<p>还有一个项目 issue 里提到的</p>
+<blockquote>
+<p>@ethan-funny 可以，在 source/css/_variables/base.styl 中：<br>// Background color for <body><br>$body-bg-color                = white</body></p>
+</blockquote>
+<p>不过我试过吧这个 white 换成其他的没有用, 不知道落了哪一步, 成功的人能提点下我吗?(／。＼)</p>
+<h1 id="文章剧终…"><a href="#文章剧终…" class="headerlink" title="文章剧终…"></a>文章剧终…</h1><p>嗯, 顺便这是我第一篇发上去的博文, 看看效果~<br>哦~ 想在主页文章列表显示一部分, 其他的要点击’阅读更多’来获取的话, 在显示和隐藏之间加上</p>
+<blockquote>
+<p>‘<!-- more -->‘</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+            <a href="/tags/坑/" rel="tag">#坑</a>
+          
+            <a href="/tags/博客/" rel="tag">#博客</a>
+          
+            <a href="/tags/安装/" rel="tag">#安装</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/10/hello-world/" rel="next" title="Hi, There ^~^">
+                <i class="fa fa-chevron-left"></i> Hi, There ^~^
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/11/put-blog-both-coding-github/" rel="prev" title="部署 hexo 到 github 和 coding 上">
+                部署 hexo 到 github 和 coding 上 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Lneayce" />
+          <p class="site-author-name" itemprop="name">Lneayce</p>
+          <p class="site-description motion-element" itemprop="description">i almost there, hope to meet u again...~^~</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">文章</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分類</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">標籤</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lneayce" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首先搭建博客"><span class="nav-number">1.</span> <span class="nav-text">首先搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#之间碰到的坑"><span class="nav-number">1.1.</span> <span class="nav-text">之间碰到的坑</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装主题-Next"><span class="nav-number">2.</span> <span class="nav-text">安装主题 Next</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章剧终…"><span class="nav-number">3.</span> <span class="nav-text">文章剧终…</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lneayce</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 強力驅動
+</div>
+
+<div class="theme-info">
+  主題 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
