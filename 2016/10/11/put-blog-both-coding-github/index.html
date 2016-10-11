@@ -66,7 +66,7 @@
 <meta property="og:site_name" content="Shambels by N">
 <meta property="og:description" content="前言在上一篇博文中, 搭建成了 hexo 博客, 设置好了 Next 主题但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)
  国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333">
-<meta property="og:updated_time" content="2016-10-11T09:18:51.000Z">
+<meta property="og:updated_time" content="2016-10-11T09:58:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署 hexo 到 github 和 coding 上">
 <meta name="twitter:description" content="前言在上一篇博文中, 搭建成了 hexo 博客, 设置好了 Next 主题但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)
@@ -206,6 +206,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-codingpage">
+          <a href="http://lneayce.coding.me/Lneayce/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            menu.codingpage
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -292,15 +302,18 @@
 <li>因为我是不同的邮箱注册了 coding, 所以好像我要重新生成个 sshkey…</li>
 <li>然后添加到 coding 的 sshkey 中</li>
 <li>验证…..额….失败…. <blockquote>
-<p>经过几次重复上面操作确认步奏无误后, 还是不行, 在首次连接时候会提示:<br>Warning: Permanently added ‘git.coding.net,14.215.101.70’ (RSA) to the list of known hosts.<br>Permission denied (publickey).<br>进到这个 known hosts 查看到最后一条记录, 是 coding 的, 但是后面跟着的 rsa 是和 github 一样, 说明那个 config 文件没有配置正确, git coding 时用了 github 的 key, 看到它连的是 git.coding.net , 将配置文件中的 coding.net 改成 git.coding.net, 再试, 成功</p>
+<p>经过几次重复上面操作确认步奏无误后, 还是不行, 在首次连接时候会提示:<br>Warning: Permanently added ‘git.coding.net,14.215.101.70’ (RSA) to the list of known hosts.<br> Permission denied (publickey).<br>进到这个 known hosts 查看到最后一条记录, 是 coding 的, 但是后面跟着的 rsa 是和 github 一样, 说明那个 config 文件没有配置正确, git coding 时用了 github 的 key, 看到它连的是 git.coding.net , 将配置文件中的 coding.net 改成 git.coding.net, 再试, 成功</p>
 </blockquote>
 </li>
 <li>好了, 这回成功了….至此, 第一篇博文的部分完成(之后分流到七牛的还要参考下这个), 我们看看<a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">第二篇</a>的接下去要怎么弄, 下面的都是按照这个博文来的, 有问题会详细说, 没问题就直接过</li>
-<li>嗯, 新建项目, 照之前 github 方式走一遍…</li>
+<li>嗯, 新建项目, 照之前 github 方式走一遍… coding 建项目不懂的详细看<a href="http://www.jianshu.com/p/2cbf3e2f6d57" target="_blank" rel="external">这篇</a>有</li>
 <li>建好项目后, 进入站点的文件夹(也就是你的博客放在哪个文件夹了, 之前创建博客的那个文件夹), 改配置文件_config.yml</li>
-<li>额…到了 hexo d 部署的时候卡在 create mode 100644 vendors/velocity/velocity.ui.min.js 好久啊, 好像有点不正常…</li>
+<li>额…到了 hexo d 部署的时候卡在 create mode 100644 vendors/velocity/velocity.ui.min.js 好久啊, 好像有点不正常… Ctrl+C 重新部署一次, </li>
+<li>这次好了, 不过我傻逼了下, 在_config.yml 之前添加的参数后面都加了个空格, 我也不知道是不是这个原因…或者是我之前添加参数后没有保存?所以源文件还是之前那样? 记得保存了再试, 应该就好了</li>
+<li>终于到了开启 page 服务的时候啦~~, 嗯, 它那个开启分支默认填的是 coding-pages, 如果你建的博客项目是在 master 分支的, 要改成 master!! 反正要和你项目的分支一样!</li>
 </ol>
-
+<h2 id="测试一下"><a href="#测试一下" class="headerlink" title="测试一下~"></a>测试一下~</h2><p>进入<a href="http://lneayce.coding.me/Lneayce/" target="_blank" rel="external">coding 的博客</a>好的! 成功了!<br>然后再看自己的 <a href="https://lneayce.github.io/">github 上的地址</a>嗯, 很好~</p>
+<h1 id="至此完成"><a href="#至此完成" class="headerlink" title="至此完成~"></a>至此完成~</h1>
       
     </div>
 
@@ -404,7 +417,7 @@
                src="/images/avatar.gif"
                alt="Lneayce" />
           <p class="site-author-name" itemprop="name">Lneayce</p>
-          <p class="site-description motion-element" itemprop="description">i almost there, hope to meet u again...~^~</p>
+          <p class="site-description motion-element" itemprop="description">i almost there, hope to meet u again...~^~      如果这里速度慢的话可以访问 coding 的页面 http://lneayce.coding.me/Lneayce/</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -448,6 +461,15 @@
                 </a>
               </span>
             
+              <span class="links-of-author-item">
+                <a href="https://coding.net/u/Lneayce" target="_blank" title="Coding">
+                  
+                    <i class="fa fa-fw fa-coding"></i>
+                  
+                  Coding
+                </a>
+              </span>
+            
           
         </div>
 
@@ -466,7 +488,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#找资料"><span class="nav-number">1.1.</span> <span class="nav-text">找资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#好了-开始"><span class="nav-number">2.</span> <span class="nav-text">好了, 开始.</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#找资料"><span class="nav-number">1.1.</span> <span class="nav-text">找资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#好了-开始"><span class="nav-number">2.</span> <span class="nav-text">好了, 开始.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试一下"><span class="nav-number">2.1.</span> <span class="nav-text">测试一下~</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#至此完成"><span class="nav-number">3.</span> <span class="nav-text">至此完成~</span></a></li></ol></div>
             
           </div>
         </section>
