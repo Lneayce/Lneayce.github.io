@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[给博客加上 RSS 和七牛图床]]></title>
+      <url>https://Lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/</url>
+      <content type="html"><![CDATA[<h1 id="原料"><a href="#原料" class="headerlink" title="原料"></a>原料</h1><p>恩, 还是按照之前那个博主的先来, 其中提到用一个框架, 挺好, 遂尝试</p>
+<h2 id="qiniu4blog"><a href="#qiniu4blog" class="headerlink" title="qiniu4blog"></a>qiniu4blog</h2><p>项目地址<a href="https://github.com/wzyuliyang/qiniu4blog" target="_blank" rel="external">https://github.com/wzyuliyang/qiniu4blog</a></p>
+<h3 id="相关搜索"><a href="#相关搜索" class="headerlink" title="相关搜索"></a>相关搜索</h3><p>恩, 搜过类似的七牛图床上传工具, 应该是这个会好点, 还可以使用命令行哦, 加上 <a href="http://www.jianshu.com/p/a15a6cb0f08d" target="_blank" rel="external">atext</a>, 也能快速的上传并复制好外链. 像<a href="http://cnfeat.com/blog/2015/11/30/cli-qiniu/" target="_blank" rel="external">这个博主</a>一样,</p>
+<p>但是, 我还是比较懒, 用 qiuniu4blog 自动再截图的时候上传并复制好链接那也是挺好~</p>
+<p>项目 github 里已经有使用教程了, 我这里就按着做, 帮大家踩踩坑~ヾ(=^▽^=)ノ</p>
+<h3 id="碰到的问题"><a href="#碰到的问题" class="headerlink" title="碰到的问题"></a>碰到的问题</h3><p>额….我的 Mac 怎么 pip 不了…→.→</p>
+<blockquote>
+<p>恩, 默认我电脑上的Python2.7的好像, 然后我又安装了3, 搞得现在用不了这个命令, 好在 python3 用 pip3命令就可以了<br>然后用这个命令就可以更新下 pip 命令</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip3 install --upgrade pip</div></pre></td></tr></table></figure>
+<p>这样, 直接就能用 pip 命令了<br><a id="more"></a></p>
+<h3 id="好了-继续上面的步骤"><a href="#好了-继续上面的步骤" class="headerlink" title="好了, 继续上面的步骤"></a>好了, 继续上面的步骤</h3><p>刚才用 pip3 来装了qiniu4blog, 接下来就是注册一个七牛云哈, (其实我在想坚果云能不能做到类似的, 毕竟每月 1g 的空间使用速度不太快的话相当于无限空间了, 先完成这个了能有图床用了在研究坚果吧~)</p>
+<p><strong>额, mgj, 竟然要实名认证….搜了下貌似还要拿个身份证拍照像淘宝一样… 又不是拿个图床能做点什么…😓, 还是看看有什么其他的替代吧, 不行就直接用压缩了的图片直接传博客, 感觉这样每个地方都要我的身份证拍照实在是…</strong></p>
+<p>坚果云好像没找到什么有用的信息, 百度云倒是有相关的, 而且顺便也存一些非私密的图片也可以的,<br>如果这些还不行, 有个想法是在 github 或者 coding 或者 oschina 键一个项目, 专门存图片, 项目的大小不知道有没有限制, 没有的话直接用好了233333~<br>还有个新浪图床, 没去了解, 这些都之后了解下</p>
+<p>所以, 这里先留个坑吧, 反正目前也不大贴图 ʅ（´◔౪◔）ʃ </p>
+<h2 id="来-我们弄多说评论"><a href="#来-我们弄多说评论" class="headerlink" title="来, 我们弄多说评论~~"></a>来, 我们弄多说评论~~</h2><p>看好多弄 hexo 的博主都是用的这个, 风格也挺契合 Next 这个主题的, 所以评论系统就选它了~</p>
+<p>嗯, 按照 Next 作者的方法去做, 也很顺利, 暂时先这样…蓝瘦, 香水饺…</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[部署 hexo 到 github 和 coding 上]]></title>
+      <url>https://Lneayce.github.io/2016/10/11/put-blog-both-coding-github/</url>
+      <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在<a href="">上一篇博文</a>中, 搭建成了 hexo 博客, 设置好了 Next 主题<br>但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)</p>
+<p> 国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333</p>
+<a id="more"></a>
+<h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
+<h1 id="好了-开始"><a href="#好了-开始" class="headerlink" title="好了, 开始."></a>好了, 开始.</h1><ol>
+<li>因为我是不同的邮箱注册了 coding, 所以好像我要重新生成个 sshkey…</li>
+<li>然后添加到 coding 的 sshkey 中</li>
+<li>验证…..额….失败…. <blockquote>
+<p>经过几次重复上面操作确认步奏无误后, 还是不行, 在首次连接时候会提示:<br>Warning: Permanently added ‘git.coding.net,14.215.101.70’ (RSA) to the list of known hosts.<br> Permission denied (publickey).<br>进到这个 known hosts 查看到最后一条记录, 是 coding 的, 但是后面跟着的 rsa 是和 github 一样, 说明那个 config 文件没有配置正确, git coding 时用了 github 的 key, 看到它连的是 git.coding.net , 将配置文件中的 coding.net 改成 git.coding.net, 再试, 成功</p>
+</blockquote>
+</li>
+<li>好了, 这回成功了….至此, 第一篇博文的部分完成(之后分流到七牛的还要参考下这个), 我们看看<a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">第二篇</a>的接下去要怎么弄, 下面的都是按照这个博文来的, 有问题会详细说, 没问题就直接过</li>
+<li>嗯, 新建项目, 照之前 github 方式走一遍… coding 建项目不懂的详细看<a href="http://www.jianshu.com/p/2cbf3e2f6d57" target="_blank" rel="external">这篇</a>有</li>
+<li>建好项目后, 进入站点的文件夹(也就是你的博客放在哪个文件夹了, 之前创建博客的那个文件夹), 改配置文件_config.yml</li>
+<li>额…到了 hexo d 部署的时候卡在 create mode 100644 vendors/velocity/velocity.ui.min.js 好久啊, 好像有点不正常… Ctrl+C 重新部署一次, </li>
+<li>这次好了, 不过我傻逼了下, 在_config.yml 之前添加的参数后面都加了个空格, 我也不知道是不是这个原因…或者是我之前添加参数后没有保存?所以源文件还是之前那样? 记得保存了再试, 应该就好了</li>
+<li>终于到了开启 page 服务的时候啦~~, 嗯, 它那个开启分支默认填的是 coding-pages, 如果你建的博客项目是在 master 分支的, 要改成 master!! 反正要和你项目的分支一样!</li>
+</ol>
+<h2 id="测试一下"><a href="#测试一下" class="headerlink" title="测试一下~"></a>测试一下~</h2><p>进入<a href="http://lneayce.coding.me/Lneayce/" target="_blank" rel="external">coding 的博客</a>好的! 成功了!<br>然后再看自己的 <a href="https://lneayce.github.io/">github 上的地址</a>嗯, 很好~</p>
+<h1 id="至此完成"><a href="#至此完成" class="headerlink" title="至此完成~"></a>至此完成~</h1>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ 初次使用 hexo 搭建博客过程以及碰到的坑]]></title>
+      <url>https://Lneayce.github.io/2016/10/11/%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E7%A2%B0%E5%88%B0%E7%9A%84%E5%9D%91/</url>
+      <content type="html"><![CDATA[<h1 id="首先搭建博客"><a href="#首先搭建博客" class="headerlink" title="首先搭建博客"></a>首先搭建博客</h1><p>搭建时候肯定是搜别人是怎么搭建的啦~ 但是本好像有个不知道是好是坏的习惯, 要参考几个博主的搭建… 这个会不会有点浪费时间, 其实我一直想是看一篇了先去跟着做了再出问题再看其他的, 不知道这算不算一种强迫症诶….</p>
+<p>好了, 开始, 我是先参照<a href="https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="external">这个博主的过程</a>做的, 里面还提到了<del>官方教程</del>, 这个之前我也看了, 但是我感觉看别人做的发教程的话, 也许能绕过一些坑.</p>
+<h2 id="之间碰到的坑"><a href="#之间碰到的坑" class="headerlink" title="之间碰到的坑"></a>之间碰到的坑</h2><p>弄着弄着, 到 SSHKey 的时候, 因为之前记得在 Github 上 Add 过一次, 就没弄, 后来发现不行, 之前弄的好像是单独在一个文件夹里设定的邮箱, 和全局的 git 不同导致的在其他地方用不了? 反正我是重新弄了一个 key 传上去, 才 OK. (有时候打开 Setting 那地方会死活进不去, 过一会就好了, 我觉得是我的网络的原因吧:()</p>
+<a id="more"></a>
+<p>好的, 到这里还没有什么大问题, 接着, 要-装逼啦-装 hexo 啦~~~<br>诶? 怎么卡在什么 sill 那个地方不动了…. 看网速, 0~1k… ㄟ( ▔, ▔ )ㄏ<br>只好设置全局代理看看…. 不过貌似听说终端走不了 ss 代理? 反正每切一次都能跳一下, 实在跳不动了, 我只能 ctrl + C 断掉再来了…<br> <strong>注意: 断掉再重新安装的话会利用之前下载的那些缓存, 而不是从头下载</strong><br> <em>可还是慢的不行啊…</em><br> 于是乎, 我又找找有没有人这么慢的, 就找到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">这个博主</a>, 他是 Windows 系统, 不过也差不多啦, 里面说的在 coding 上也部署上去我准备也想试试. 里面说到了用国内淘宝的镜像来下载, 我这里的结果是_<em> ERROR xxxxxxxxx</em> 啥的, 不记得了, 好像意思是少了什么?? 看来是走不通<br> 然后, 又找到了<a href="http://www.jianshu.com/p/fd878edb95e7" target="_blank" rel="external">这个博主</a>, 对了, 是它提到了官方安装, 第一个那个没提到, 提到的是 Next 主题的官方安装, 这里用的是<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure></p>
+<p> 好像有好点吧, 但是还是有点慢, 就扔着不管了…反正就那么以上步奏折腾折腾, 断了重新, 再断再重新, 终于弄好了(◎_◎;)</p>
+<p> 嗯, 接下来再继续按第一个博主的弄, hexo init, npm install…<br> <strong>慢着…怎么 init 又好久…</strong><br> <strong>这里在自己的文件夹里 hexo init 的时候, 如果你要中断的话一定要清空文件夹里的东西或者删了文件夹重新建吧</strong><br> 因为这里中断的话, 再执行 hexo 命令它就不认了, 说这个文件夹没有班底 hexo, 大概是你断掉了以后 hexo 的管理和这个文件夹断了吧??</p>
+<p> 这样又反复弄了几次, 诶…终于好了…<br> npm install 也 OK ~~&lt;(▰˘◡˘▰)&gt;</p>
+<p> 后面的就一路过去没问题了~</p>
+<h1 id="安装主题-Next"><a href="#安装主题-Next" class="headerlink" title="安装主题 Next"></a>安装主题 Next</h1><p>对, 这个很简单, 按照 Next 作者的弄就 OK 了, 就是从 github 上下载 repo 比较久, 耐心点<br>里面的很多配置都有提到. 顺便说下, 博客底部就可以看哪些博客是用什么主题, 我这里是用 pisces scheme, 诶? 双鱼?~</p>
+<p>之后就 OK 啦~ 没什么大问题了, 要是洞 CSS 的话还能在其他的配置文件那里自己设定样式, 像我就想让背景换暗色系…(话说作者这个说法在一年前都说了到现在都没弄啊啊啊…)</p>
+<p>然后又一遍 goo, 恩, 可以, 有人做过的, 自己搜下 ‘hexo next 改背景’ 找找就有了,<br>我搜到的一些:</p>
+<blockquote>
+<p>在 NexT 主题的 github 的 issues 里，我找到了如何自定义一些页面样式的方法，作者 IISSNan 很贴心的在主题的 “\source\css_custom\” 文件夹下放了一个 custom.styl 文件，可以让用户自己在里面写 CSS 代码以个性化自己的博客。<br>于是我找到这个文件，并找到一张去年在三亚拍的大海照片用作背景，开始编写代码了！<br>首先我尝试输入了如下的 CSS 代码，主要是来测试一下这个 custom.styl 是否真的有效：<br>background-image:url(/images/background.jpg);<br>background-repeat: no-repeat;<br>background-attachment:fixed;<br>background-position:50% 50%; </p>
+</blockquote>
+<p>还有一个项目 issue 里提到的</p>
+<blockquote>
+<p>@ethan-funny 可以，在 source/css/_variables/base.styl 中：<br>// Background color for <body><br>$body-bg-color                = white</body></p>
+</blockquote>
+<p>不过我试过吧这个 white 换成其他的没有用, 不知道落了哪一步, 成功的人能提点下我吗?(／。＼)</p>
+<h1 id="文章剧终…"><a href="#文章剧终…" class="headerlink" title="文章剧终…"></a>文章剧终…</h1><p>嗯, 顺便这是我第一篇发上去的博文, 看看效果~<br>哦~ 想在主页文章列表显示一部分, 其他的要点击’阅读更多’来获取的话, 在显示和隐藏之间加上</p>
+<blockquote>
+<p>‘<!-- more -->‘</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hi, There ^~^]]></title>
+      <url>https://Lneayce.github.io/2016/10/10/hello-world/</url>
+      <content type="html"><![CDATA[<p>here is my first personal blog, if u see, u will know this word is for u, i really woundn’t border u, just like before, we 233333 is fine. keep post our self infomation out, and don’t loss the mind. </p>
+<a id="more"></a>
+<h2 id="Mention"><a href="#Mention" class="headerlink" title="Mention"></a>Mention</h2><h3 id="Put-My-walk-forward"><a href="#Put-My-walk-forward" class="headerlink" title="Put My walk forward"></a>Put My walk forward</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ just to enclose u, more close</div></pre></td></tr></table></figure>
+<h3 id="Run-mind"><a href="#Run-mind" class="headerlink" title="Run mind"></a>Run mind</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ miss u any time</div></pre></td></tr></table></figure>
+<h3 id="Generate-heart"><a href="#Generate-heart" class="headerlink" title="Generate heart"></a>Generate heart</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ i make a heart just like u make me, use your ploy</div></pre></td></tr></table></figure>
+<h3 id="To-follow-what"><a href="#To-follow-what" class="headerlink" title="To follow what"></a>To follow what</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ i believe i will touch u again... maybe</div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
