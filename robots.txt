@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://Lneayce.github.io/sitemap.xml
-Sitemap: https://Lneayce.github.io/baidusitemap.xml
+Sitemap: https://lneayce.github.io/sitemap.xml
+Sitemap: http://lneayce.coding.me/baidusitemap.xml
