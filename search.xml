@@ -4,12 +4,6 @@
   
     
     <entry>
-      <title><![CDATA[blog-seo]]></title>
-      <url>https://Lneayce.github.io/2016/10/12/blog-seo/</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[给博客加上 RSS 和七牛图床]]></title>
       <url>https://Lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/</url>
       <content type="html"><![CDATA[<h1 id="原料"><a href="#原料" class="headerlink" title="原料"></a>原料</h1><p>恩, 还是按照之前那个博主的先来, 其中提到用一个框架, 挺好, 遂尝试</p>

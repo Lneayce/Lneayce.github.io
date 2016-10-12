@@ -8,20 +8,8 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>i almost there, hope to meet u again...~^~      如果这里速度慢的话可以访问 coding 的页面 http://lneayce.coding.me/Lneayce/</description>
-    <pubDate>Wed, 12 Oct 2016 06:21:47 GMT</pubDate>
+    <pubDate>Wed, 12 Oct 2016 02:07:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>blog-seo</title>
-      <link>https://Lneayce.github.io/2016/10/12/blog-seo/</link>
-      <guid>https://Lneayce.github.io/2016/10/12/blog-seo/</guid>
-      <pubDate>Wed, 12 Oct 2016 06:21:47 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>https://Lneayce.github.io/2016/10/12/blog-seo/#disqus_thread</comments>
-    </item>
     
     <item>
       <title>给博客加上 RSS 和七牛图床</title>
