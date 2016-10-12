@@ -4,6 +4,14 @@
   
     
     <entry>
+      <title><![CDATA[seo-my-blog]]></title>
+      <url>https://Lneayce.github.io/2016/10/12/seo-my-blog/</url>
+      <content type="html"><![CDATA[<h1 id="搭建完-hexo-之后-写了些文章后-你发现了么…"><a href="#搭建完-hexo-之后-写了些文章后-你发现了么…" class="headerlink" title="搭建完 hexo 之后, 写了些文章后, 你发现了么…"></a>搭建完 hexo 之后, 写了些文章后, 你发现了么…</h1><p>我们在搜索引擎搜不到我们的博客….<br>幸好继续搜啊搜找到解决方法了…<br><a id="more"></a></p>
+<p>等我验证后再继续写….</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[给博客加上 RSS 和七牛图床]]></title>
       <url>https://Lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/</url>
       <content type="html"><![CDATA[<h1 id="原料"><a href="#原料" class="headerlink" title="原料"></a>原料</h1><p>恩, 还是按照之前那个博主的先来, 其中提到用一个框架, 挺好, 遂尝试</p>

@@ -8,8 +8,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>i almost there, hope to meet u again...~^~      如果这里速度慢的话可以访问 coding 的页面 http://lneayce.coding.me/Lneayce/</description>
-    <pubDate>Wed, 12 Oct 2016 02:07:36 GMT</pubDate>
+    <pubDate>Wed, 12 Oct 2016 10:03:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>seo-my-blog</title>
+      <link>https://Lneayce.github.io/2016/10/12/seo-my-blog/</link>
+      <guid>https://Lneayce.github.io/2016/10/12/seo-my-blog/</guid>
+      <pubDate>Wed, 12 Oct 2016 09:59:18 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;搭建完-hexo-之后-写了些文章后-你发现了么…&quot;&gt;&lt;a href=&quot;#搭建完-hexo-之后-写了些文章后-你发现了么…&quot; class=&quot;headerlink&quot; title=&quot;搭建完 hexo 之后, 写了些文章后, 你发现了么…&quot;&gt;&lt;/a&gt;搭建完 hexo 之后, 写了些文章后, 你发现了么…&lt;/h1&gt;&lt;p&gt;我们在搜索引擎搜不到我们的博客….&lt;br&gt;幸好继续搜啊搜找到解决方法了…&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="搭建完-hexo-之后-写了些文章后-你发现了么…"><a href="#搭建完-hexo-之后-写了些文章后-你发现了么…" class="headerlink" title="搭建完 hexo 之后, 写了些文章后, 你发现了么…"></a>搭建完 hexo 之后, 写了些文章后, 你发现了么…</h1><p>我们在搜索引擎搜不到我们的博客….<br>幸好继续搜啊搜找到解决方法了…<br><a id="more"></a></p>
+<p>等我验证后再继续写….</p>
+]]></content:encoded>
+      
+      <comments>https://Lneayce.github.io/2016/10/12/seo-my-blog/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>给博客加上 RSS 和七牛图床</title>
