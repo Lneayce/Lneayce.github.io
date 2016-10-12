@@ -8,23 +8,23 @@
       <url>https://Lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/</url>
       <content type="html"><![CDATA[<h1 id="原料"><a href="#原料" class="headerlink" title="原料"></a>原料</h1><p>恩, 还是按照之前那个博主的先来, 其中提到用一个框架, 挺好, 遂尝试</p>
 <h2 id="qiniu4blog"><a href="#qiniu4blog" class="headerlink" title="qiniu4blog"></a>qiniu4blog</h2><p>项目地址<a href="https://github.com/wzyuliyang/qiniu4blog" target="_blank" rel="external">https://github.com/wzyuliyang/qiniu4blog</a></p>
-<h3 id="相关搜索"><a href="#相关搜索" class="headerlink" title="相关搜索"></a>相关搜索</h3><p>恩, 搜过类似的七牛图床上传工具, 应该是这个会好点, 还可以使用命令行哦, 加上 <a href="http://www.jianshu.com/p/a15a6cb0f08d" target="_blank" rel="external">atext</a>, 也能快速的上传并复制好外链. 像<a href="http://cnfeat.com/blog/2015/11/30/cli-qiniu/" target="_blank" rel="external">这个博主</a>一样,</p>
+<h1 id="相关搜索"><a href="#相关搜索" class="headerlink" title="相关搜索"></a>相关搜索</h1><p>恩, 搜过类似的七牛图床上传工具, 应该是这个会好点, 还可以使用命令行哦, 加上 <a href="http://www.jianshu.com/p/a15a6cb0f08d" target="_blank" rel="external">atext</a>, 也能快速的上传并复制好外链. 像<a href="http://cnfeat.com/blog/2015/11/30/cli-qiniu/" target="_blank" rel="external">这个博主</a>一样,</p>
 <p>但是, 我还是比较懒, 用 qiuniu4blog 自动再截图的时候上传并复制好链接那也是挺好~</p>
 <p>项目 github 里已经有使用教程了, 我这里就按着做, 帮大家踩踩坑~ヾ(=^▽^=)ノ</p>
-<h3 id="碰到的问题"><a href="#碰到的问题" class="headerlink" title="碰到的问题"></a>碰到的问题</h3><p>额….我的 Mac 怎么 pip 不了…→.→</p>
+<h1 id="碰到的问题"><a href="#碰到的问题" class="headerlink" title="碰到的问题"></a>碰到的问题</h1><p>额….我的 Mac 怎么 pip 不了…→.→</p>
 <blockquote>
 <p>恩, 默认我电脑上的Python2.7的好像, 然后我又安装了3, 搞得现在用不了这个命令, 好在 python3 用 pip3命令就可以了<br>然后用这个命令就可以更新下 pip 命令</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip3 install --upgrade pip</div></pre></td></tr></table></figure>
 <p>这样, 直接就能用 pip 命令了<br><a id="more"></a></p>
-<h3 id="好了-继续上面的步骤"><a href="#好了-继续上面的步骤" class="headerlink" title="好了, 继续上面的步骤"></a>好了, 继续上面的步骤</h3><p>刚才用 pip3 来装了qiniu4blog, 接下来就是注册一个七牛云哈, (其实我在想坚果云能不能做到类似的, 毕竟每月 1g 的空间使用速度不太快的话相当于无限空间了, 先完成这个了能有图床用了在研究坚果吧~)</p>
+<h1 id="好了-继续上面的步骤"><a href="#好了-继续上面的步骤" class="headerlink" title="好了, 继续上面的步骤"></a>好了, 继续上面的步骤</h1><p>刚才用 pip3 来装了qiniu4blog, 接下来就是注册一个七牛云哈, (其实我在想坚果云能不能做到类似的, 毕竟每月 1g 的空间使用速度不太快的话相当于无限空间了, 先完成这个了能有图床用了在研究坚果吧~)</p>
 <p><strong>额, mgj, 竟然要实名认证….搜了下貌似还要拿个身份证拍照像淘宝一样… 又不是拿个图床能做点什么…😓, 还是看看有什么其他的替代吧, 不行就直接用压缩了的图片直接传博客, 感觉这样每个地方都要我的身份证拍照实在是…</strong></p>
 <p>坚果云好像没找到什么有用的信息, 百度云倒是有相关的, 而且顺便也存一些非私密的图片也可以的,<br>如果这些还不行, 有个想法是在 github 或者 coding 或者 oschina 键一个项目, 专门存图片, 项目的大小不知道有没有限制, 没有的话直接用好了233333~<br>还有个新浪图床, 没去了解, 这些都之后了解下</p>
 <p>所以, 这里先留个坑吧, 反正目前也不大贴图 ʅ（´◔౪◔）ʃ </p>
 <h2 id="来-我们弄多说评论"><a href="#来-我们弄多说评论" class="headerlink" title="来, 我们弄多说评论~~"></a>来, 我们弄多说评论~~</h2><p>看好多弄 hexo 的博主都是用的这个, 风格也挺契合 Next 这个主题的, 所以评论系统就选它了~</p>
 <p>嗯, 按照 <a href="http://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="external">Next 作者的方法</a>(以下简称 Next 方法)去做, 也很顺利, <del>暂时先这样…蓝瘦, 香水饺…</del></p>
-<h2 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h2><p>在 Next 方法里, 有提到, 用 leancloud, 根据推荐的帖子做, 现在页面和帖子中的有点不一样, 直接注册登录好后就可以看到’创建应用’的按钮</p>
-]]></content>
+<h2 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h2><p>在 Next 方法里, 有提到, 用 leancloud, 根据推荐的帖子做, 现在页面和帖子中的有点不一样, 直接注册登录好后就可以看到’创建应用’的按钮, 接下来就是和博主做的一样就好了, 没有问题ʅ(‾◡◝)</p>
+<h1 id="基本可以了-目前就是没有图床-但这个目前不太影响"><a href="#基本可以了-目前就是没有图床-但这个目前不太影响" class="headerlink" title="基本可以了~ 目前就是没有图床, 但这个目前不太影响~"></a>基本可以了~ 目前就是没有图床, 但这个目前不太影响~</h1>]]></content>
     </entry>
     
     <entry>
