@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://Lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/</loc>
+    <lastmod>2016-10-12T10:11:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>给博客加上 RSS 和七牛图床</title>
+        <pubTime>2016-10-11T11:20:28.000Z</pubTime>
+        
+        <tag>七牛</tag>
+         
+        <tag>RSS</tag>
+         
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://Lneayce.github.io/2016/10/12/seo-my-blog/</loc>
     <lastmod>2016-10-12T10:03:14.000Z</lastmod>
     <data>
@@ -21,30 +45,6 @@
            
              
               <breadCrumb title="使用" url="https://Lneayce.github.io/categories/%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://Lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/</loc>
-    <lastmod>2016-10-12T02:07:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>给博客加上 RSS 和七牛图床</title>
-        <pubTime>2016-10-11T11:20:28.000Z</pubTime>
-        
-        <tag>七牛</tag>
-         
-        <tag>RSS</tag>
-         
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
