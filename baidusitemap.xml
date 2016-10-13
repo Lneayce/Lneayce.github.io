@@ -4,6 +4,58 @@
 
     
   <url>
+    <loc>https://Lneayce.github.io/2016/10/13/summarize-of-create-hexoblog/</loc>
+    <lastmod>2016-10-13T02:27:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>这几天对搭建这个 hexo 博客汇总一下帖子</title>
+        <pubTime>2016-10-13T02:19:09.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>总结</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>Next</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Lneayce.github.io/2016/10/12/seo-my-blog/</loc>
+    <lastmod>2016-10-13T02:12:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo 博客搭建起来后进行 SEO 让其搜索的到</title>
+        <pubTime>2016-10-12T09:59:18.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>seo</tag>
+         
+        <tag>搜索不到博客</tag>
+         
+        <tag>验证站点文件</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://Lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/</loc>
     <lastmod>2016-10-12T10:11:50.000Z</lastmod>
     <data>
@@ -21,30 +73,6 @@
            
              
               <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://Lneayce.github.io/2016/10/12/seo-my-blog/</loc>
-    <lastmod>2016-10-12T10:03:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>seo-my-blog</title>
-        <pubTime>2016-10-12T09:59:18.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>seo</tag>
-         
-        <tag>搜索不到博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="使用" url="https://Lneayce.github.io/categories/%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
