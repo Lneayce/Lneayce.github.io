@@ -66,7 +66,7 @@
 <meta property="og:url" content="https://Lneayce.github.io/2016/10/12/seo-my-blog/index.html">
 <meta property="og:site_name" content="Shambels by N">
 <meta property="og:description" content="搭建完 hexo 之后, 写了些文章后, 你发现了么…我们在搜索引擎搜不到我们的博客….幸好继续搜啊搜找到解决方法了…">
-<meta property="og:updated_time" content="2016-10-13T02:12:51.000Z">
+<meta property="og:updated_time" content="2016-10-13T02:50:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 博客搭建起来后进行 SEO 让其搜索的到">
 <meta name="twitter:description" content="搭建完 hexo 之后, 写了些文章后, 你发现了么…我们在搜索引擎搜不到我们的博客….幸好继续搜啊搜找到解决方法了…">
@@ -357,7 +357,13 @@
 
       
         <h1 id="搭建完-hexo-之后-写了些文章后-你发现了么…"><a href="#搭建完-hexo-之后-写了些文章后-你发现了么…" class="headerlink" title="搭建完 hexo 之后, 写了些文章后, 你发现了么…"></a>搭建完 hexo 之后, 写了些文章后, 你发现了么…</h1><p>我们在搜索引擎搜不到我们的博客….<br>幸好继续搜啊搜找到解决方法了…<br><a id="more"></a></p>
-<p><del>等我验证后再继续写….</del></p>
+<ul>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><p><del>等我验证后再继续写….</del></p>
 <p> 弄完了想试试, 啊哟? 发现点归档会找不到网页….在 coding 上又是正常的, 开始还怀疑会不会是 git 上去的时候有些文件失败了….  因为 git 上去的时候有提示 key_read: uudecode {pubKey} failed…</p>
 <p> 然后过了一下, 自己好了…. 看来是国内网连接 github 的网络问题… 好悲催啊, 即是翻墙也是会有点问题啊.</p>
 <h1 id="好了-开始"><a href="#好了-开始" class="headerlink" title="好了, 开始"></a>好了, 开始</h1><!-- more -->
@@ -370,10 +376,11 @@
 <li><p>足够是这篇, 也是 SEO 优化的 <a href="http://www.arao.me/2015/hexo-next-theme-optimize-seo/" target="_blank" rel="external">动动手指，不限于NexT主题的Hexo优化（SEO篇）</a></p>
 </li>
 </ol>
-<p>首先, 按照1.的做法, 一路下去按照那个博主的做法就好了, 我这里说一下碰到的坑:(主要针对 Next 主题, 其他的按照类似的自己测试下吧)</p>
+<h1 id="我的搭建注意点"><a href="#我的搭建注意点" class="headerlink" title="我的搭建注意点"></a>我的搭建注意点</h1><p>首先, 按照1.的做法, 一路下去按照那个博主的做法就好了, 我这里说一下碰到的坑:(主要针对 Next 主题, 其他的按照类似的自己测试下吧)</p>
 <ul>
 <li>在 Google 和百度验证站点的时候, 注意下载的验证文件最好要放在 Next 主题文件夹下的根目录: theme/source, 因为放在站点根目录的话:source, 在 ‘hexo g’ 生成站点文件即 public 文件夹的时候, 会根据主题或站点进行页面的渲染, 给这些验证文件加了很多东西, 不在是原来里面仅有的验证码内容, 放在主题的根目录的话不会有这种情况, 原来是什么文件夹就是什么文件夹, 这好像和主题里的一耳光配置文件有关, 里面判断了是否有这些文件, 有的话好像就不做渲染, 它判断的路径是自己主题下的. 评论里有说在验证文件的头部加个字段, 我没理解是在哪加, 直接加在内容里? 反正我是不行, 可能是在渲染后的文件的 head 头部加的. <strong>注意: 在根据这些博文操作的时候可能是生成什么, 在站点根目录 Source 文件夹下又会拷贝这验证文件过来, 记得删掉, 不然 hexo g 的时候又要渲染一次了</strong></li>
-<li><p>其他的按照下来做也没什么问题, 对于百度的自动提交, 代码加的地方对于 Next 的话我是参考这个博文: <a href="http://www.jianshu.com/p/29d9eed79ad8" target="_blank" rel="external">hexo: windows下向百度站长平台主动推送链接</a> 说了 Next 主题下这段自动提交的代码加在哪里</p>
+<li>其他的按照下来做也没什么问题, 对于百度的自动提交, 代码加的地方对于 Next 的话我是参考这个博文: <a href="http://www.jianshu.com/p/29d9eed79ad8" target="_blank" rel="external">hexo: windows下向百度站长平台主动推送链接</a> 说了 Next 主题下这段自动提交的代码加在哪里</li>
+<li><p>另外, 在 github 和 coding 部署时, 验证两个站点的时候, Google 的话是同一个验证文件, 百度的是两个不同的, 按照上面去弄就好</p>
 <blockquote>
 <p>将next主题配置文件中的baidu_push设置为true<br>修改 /next/layout/_scripts文件夹下面的baidu-push.swig<br>脚本部分:</p>
  <script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js"></script>
@@ -605,7 +612,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建完-hexo-之后-写了些文章后-你发现了么…"><span class="nav-number">1.</span> <span class="nav-text">搭建完 hexo 之后, 写了些文章后, 你发现了么…</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#好了-开始"><span class="nav-number">2.</span> <span class="nav-text">好了, 开始</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建完-hexo-之后-写了些文章后-你发现了么…"><span class="nav-number">1.</span> <span class="nav-text">搭建完 hexo 之后, 写了些文章后, 你发现了么…</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><span class="nav-number">2.</span> <span class="nav-text">完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#好了-开始"><span class="nav-number">3.</span> <span class="nav-text">好了, 开始</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我的搭建注意点"><span class="nav-number">4.</span> <span class="nav-text">我的搭建注意点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后"><span class="nav-number">5.</span> <span class="nav-text">最后</span></a></li></ol></div>
             
           </div>
         </section>

@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>i almost there, hope to meet u again...~^~      如果这里速度慢的话可以访问 coding 的页面 http://lneayce.coding.me/Lneayce/</description>
-    <pubDate>Thu, 13 Oct 2016 02:27:31 GMT</pubDate>
+    <pubDate>Thu, 13 Oct 2016 02:50:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,18 +18,23 @@
       <pubDate>Thu, 13 Oct 2016 02:19:09 GMT</pubDate>
       <description>
       
-        &lt;h1 id=&quot;对之前搭建的帖子来个入口&quot;&gt;&lt;a href=&quot;#对之前搭建的帖子来个入口&quot; class=&quot;headerlink&quot; title=&quot;对之前搭建的帖子来个入口&quot;&gt;&lt;/a&gt;对之前搭建的帖子来个入口&lt;/h1&gt;&lt;p&gt;这几天搭建了这个 hexo 博客, 但是不是一步到位的搭建,
+        &lt;h1 id=&quot;对之前搭建的帖子来个入口&quot;&gt;&lt;a href=&quot;#对之前搭建的帖子来个入口&quot; class=&quot;headerlink&quot; title=&quot;对之前搭建的帖子来个入口&quot;&gt;&lt;/a&gt;对之前搭建的帖子来个入口&lt;/h1&gt;&lt;p&gt;这几天搭建了这个 hexo 博客, 但是不是一步到位的搭建, 每步参考的帖子都没哟完整下来的从头到尾搭建到能从搜索引擎里搜索到帖子的方法介绍. 所以我也是从开始搭建来搜索, 做好后发现这样少了, 然后再弄好后又发现那样不行. 也许别人和我一样也是没有一步到位的完成, 所以也就分了几篇帖子.&lt;/p&gt;
+&lt;h1 id=&quot;做的步奏&quot;&gt;&lt;a href=&quot;#做的步奏&quot; class=&quot;headerlink&quot; title=&quot;做的步奏&quot;&gt;&lt;/a&gt;做的步奏&lt;/h1&gt;
       
       </description>
       
       <content:encoded><![CDATA[<h1 id="对之前搭建的帖子来个入口"><a href="#对之前搭建的帖子来个入口" class="headerlink" title="对之前搭建的帖子来个入口"></a>对之前搭建的帖子来个入口</h1><p>这几天搭建了这个 hexo 博客, 但是不是一步到位的搭建, 每步参考的帖子都没哟完整下来的从头到尾搭建到能从搜索引擎里搜索到帖子的方法介绍. 所以我也是从开始搭建来搜索, 做好后发现这样少了, 然后再弄好后又发现那样不行. 也许别人和我一样也是没有一步到位的完成, 所以也就分了几篇帖子.</p>
-<h1 id="做的步奏"><a href="#做的步奏" class="headerlink" title="做的步奏"></a>做的步奏</h1><p>按照之前建 hexo 的顺序来列出帖子, 根据这个帖子的步奏来做, hexo 的搭建才算是基本完成了~ 想要更高级功能什么的自行 Google 哦~</p>
+<h1 id="做的步奏"><a href="#做的步奏" class="headerlink" title="做的步奏"></a>做的步奏</h1><a id="more"></a>
+<p>按照之前建 hexo 的顺序来列出帖子, 根据这个帖子的步奏来做, hexo 的搭建才算是基本完成了~ 想要更高级功能什么的自行 Google 哦~</p>
 <ol>
-<li><a href="https://lneayce.github.io/2016/10/11/%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E7%A2%B0%E5%88%B0%E7%9A%84%E5%9D%91/">初次使用 hexo 搭建博客过程以及碰到的坑</a></li>
-<li><a href="https://lneayce.github.io/2016/10/11/put-blog-both-coding-github/">部署 hexo 到 github 和 coding 上</a></li>
-<li><a href="https://lneayce.github.io/2016/10/11/embed-qiniuimage-rss2/">给博客加上 RSS 和七牛图床</a></li>
-<li></li>
-</ol>]]></content:encoded>
+<li><a href="/2016/10/11/%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E7%A2%B0%E5%88%B0%E7%9A%84%E5%9D%91/">初次使用 hexo 搭建博客过程以及碰到的坑</a></li>
+<li><a href="/2016/10/11/put-blog-both-coding-github/">部署 hexo 到 github 和 coding 上</a></li>
+<li><a href="/2016/10/11/embed-qiniuimage-rss2/">给博客加上 RSS 和七牛图床</a></li>
+<li><a href="/2016/10/12/seo-my-blog/">hexo 博客搭建起来后进行 SEO 让其搜索的到</a></li>
+</ol>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>对于之后有什么补充的, 也会在这里贴出来</p>
+<p>这时候才是真正的….enjoy it !</p>
+<p>说到 enjoy it… 又想起了 Nike 的广告语的笑话…. just do it…所以很多人都去做了 IT….(◎-◎；)</p>]]></content:encoded>
       
       <comments>https://Lneayce.github.io/2016/10/13/summarize-of-create-hexoblog/#disqus_thread</comments>
     </item>
@@ -46,7 +51,13 @@
       </description>
       
       <content:encoded><![CDATA[<h1 id="搭建完-hexo-之后-写了些文章后-你发现了么…"><a href="#搭建完-hexo-之后-写了些文章后-你发现了么…" class="headerlink" title="搭建完 hexo 之后, 写了些文章后, 你发现了么…"></a>搭建完 hexo 之后, 写了些文章后, 你发现了么…</h1><p>我们在搜索引擎搜不到我们的博客….<br>幸好继续搜啊搜找到解决方法了…<br><a id="more"></a></p>
-<p><del>等我验证后再继续写….</del></p>
+<ul>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><p><del>等我验证后再继续写….</del></p>
 <p> 弄完了想试试, 啊哟? 发现点归档会找不到网页….在 coding 上又是正常的, 开始还怀疑会不会是 git 上去的时候有些文件失败了….  因为 git 上去的时候有提示 key_read: uudecode {pubKey} failed…</p>
 <p> 然后过了一下, 自己好了…. 看来是国内网连接 github 的网络问题… 好悲催啊, 即是翻墙也是会有点问题啊.</p>
 <h1 id="好了-开始"><a href="#好了-开始" class="headerlink" title="好了, 开始"></a>好了, 开始</h1><!-- more -->
@@ -59,10 +70,11 @@
 <li><p>足够是这篇, 也是 SEO 优化的 <a href="http://www.arao.me/2015/hexo-next-theme-optimize-seo/" target="_blank" rel="external">动动手指，不限于NexT主题的Hexo优化（SEO篇）</a></p>
 </li>
 </ol>
-<p>首先, 按照1.的做法, 一路下去按照那个博主的做法就好了, 我这里说一下碰到的坑:(主要针对 Next 主题, 其他的按照类似的自己测试下吧)</p>
+<h1 id="我的搭建注意点"><a href="#我的搭建注意点" class="headerlink" title="我的搭建注意点"></a>我的搭建注意点</h1><p>首先, 按照1.的做法, 一路下去按照那个博主的做法就好了, 我这里说一下碰到的坑:(主要针对 Next 主题, 其他的按照类似的自己测试下吧)</p>
 <ul>
 <li>在 Google 和百度验证站点的时候, 注意下载的验证文件最好要放在 Next 主题文件夹下的根目录: theme/source, 因为放在站点根目录的话:source, 在 ‘hexo g’ 生成站点文件即 public 文件夹的时候, 会根据主题或站点进行页面的渲染, 给这些验证文件加了很多东西, 不在是原来里面仅有的验证码内容, 放在主题的根目录的话不会有这种情况, 原来是什么文件夹就是什么文件夹, 这好像和主题里的一耳光配置文件有关, 里面判断了是否有这些文件, 有的话好像就不做渲染, 它判断的路径是自己主题下的. 评论里有说在验证文件的头部加个字段, 我没理解是在哪加, 直接加在内容里? 反正我是不行, 可能是在渲染后的文件的 head 头部加的. <strong>注意: 在根据这些博文操作的时候可能是生成什么, 在站点根目录 Source 文件夹下又会拷贝这验证文件过来, 记得删掉, 不然 hexo g 的时候又要渲染一次了</strong></li>
-<li><p>其他的按照下来做也没什么问题, 对于百度的自动提交, 代码加的地方对于 Next 的话我是参考这个博文: <a href="http://www.jianshu.com/p/29d9eed79ad8" target="_blank" rel="external">hexo: windows下向百度站长平台主动推送链接</a> 说了 Next 主题下这段自动提交的代码加在哪里</p>
+<li>其他的按照下来做也没什么问题, 对于百度的自动提交, 代码加的地方对于 Next 的话我是参考这个博文: <a href="http://www.jianshu.com/p/29d9eed79ad8" target="_blank" rel="external">hexo: windows下向百度站长平台主动推送链接</a> 说了 Next 主题下这段自动提交的代码加在哪里</li>
+<li><p>另外, 在 github 和 coding 部署时, 验证两个站点的时候, Google 的话是同一个验证文件, 百度的是两个不同的, 按照上面去弄就好</p>
 <blockquote>
 <p>将next主题配置文件中的baidu_push设置为true<br>修改 /next/layout/_scripts文件夹下面的baidu-push.swig<br>脚本部分:</p>
  <script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js"></script>
@@ -123,7 +135,13 @@
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip3 install --upgrade pip</div></pre></td></tr></table></figure>
 <p>这样, 直接就能用 pip 命令了<br><a id="more"></a></p>
-<h1 id="好了-继续上面的步骤"><a href="#好了-继续上面的步骤" class="headerlink" title="好了, 继续上面的步骤"></a>好了, 继续上面的步骤</h1><p>刚才用 pip3 来装了qiniu4blog, 接下来就是注册一个七牛云哈, (其实我在想坚果云能不能做到类似的, 毕竟每月 1g 的空间使用速度不太快的话相当于无限空间了, 先完成这个了能有图床用了在研究坚果吧~)</p>
+<ul>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><h1 id="好了-继续上面的步骤"><a href="#好了-继续上面的步骤" class="headerlink" title="好了, 继续上面的步骤"></a>好了, 继续上面的步骤</h1><p>刚才用 pip3 来装了qiniu4blog, 接下来就是注册一个七牛云哈, (其实我在想坚果云能不能做到类似的, 毕竟每月 1g 的空间使用速度不太快的话相当于无限空间了, 先完成这个了能有图床用了在研究坚果吧~)</p>
 <p><strong>额, mgj, 竟然要实名认证….搜了下貌似还要拿个身份证拍照像淘宝一样… 又不是拿个图床能做点什么…😓, 还是看看有什么其他的替代吧, 不行就直接用压缩了的图片直接传博客, 感觉这样每个地方都要我的身份证拍照实在是…</strong></p>
 <p>坚果云好像没找到什么有用的信息, 百度云倒是有相关的, 而且顺便也存一些非私密的图片也可以的,<br>如果这些还不行, 有个想法是在 github 或者 coding 或者 oschina 键一个项目, 专门存图片, 项目的大小不知道有没有限制, 没有的话直接用好了233333~<br>还有个新浪图床, 没去了解, 这些都之后了解下</p>
 <p>所以, 这里先留个坑吧, 反正目前也不大贴图 ʅ（´◔౪◔）ʃ </p>
@@ -151,7 +169,13 @@
       <content:encoded><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在<a href="">上一篇博文</a>中, 搭建成了 hexo 博客, 设置好了 Next 主题<br>但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)</p>
 <p> 国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333</p>
 <a id="more"></a>
-<h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
+<ul>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
 <h1 id="好了-开始"><a href="#好了-开始" class="headerlink" title="好了, 开始."></a>好了, 开始.</h1><ol>
 <li>因为我是不同的邮箱注册了 coding, 所以好像我要重新生成个 sshkey…</li>
 <li>然后添加到 coding 的 sshkey 中</li>
@@ -189,7 +213,13 @@
 <p>好了, 开始, 我是先参照<a href="https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="external">这个博主的过程</a>做的, 里面还提到了<del>官方教程</del>, 这个之前我也看了, 但是我感觉看别人做的发教程的话, 也许能绕过一些坑.</p>
 <h2 id="之间碰到的坑"><a href="#之间碰到的坑" class="headerlink" title="之间碰到的坑"></a>之间碰到的坑</h2><p>弄着弄着, 到 SSHKey 的时候, 因为之前记得在 Github 上 Add 过一次, 就没弄, 后来发现不行, 之前弄的好像是单独在一个文件夹里设定的邮箱, 和全局的 git 不同导致的在其他地方用不了? 反正我是重新弄了一个 key 传上去, 才 OK. (有时候打开 Setting 那地方会死活进不去, 过一会就好了, 我觉得是我的网络的原因吧:()</p>
 <a id="more"></a>
-<p>好的, 到这里还没有什么大问题, 接着, 要-装逼啦-装 hexo 啦~~~<br>诶? 怎么卡在什么 sill 那个地方不动了…. 看网速, 0~1k… ㄟ( ▔, ▔ )ㄏ<br>只好设置全局代理看看…. 不过貌似听说终端走不了 ss 代理? 反正每切一次都能跳一下, 实在跳不动了, 我只能 ctrl + C 断掉再来了…<br> <strong>注意: 断掉再重新安装的话会利用之前下载的那些缓存, 而不是从头下载</strong><br> <em>可还是慢的不行啊…</em><br> 于是乎, 我又找找有没有人这么慢的, 就找到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">这个博主</a>, 他是 Windows 系统, 不过也差不多啦, 里面说的在 coding 上也部署上去我准备也想试试. 里面说到了用国内淘宝的镜像来下载, 我这里的结果是_<em> ERROR xxxxxxxxx</em> 啥的, 不记得了, 好像意思是少了什么?? 看来是走不通<br> 然后, 又找到了<a href="http://www.jianshu.com/p/fd878edb95e7" target="_blank" rel="external">这个博主</a>, 对了, 是它提到了官方安装, 第一个那个没提到, 提到的是 Next 主题的官方安装, 这里用的是<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure></p>
+<ul>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><p>好的, 到这里还没有什么大问题, 接着, 要-装逼啦-装 hexo 啦~~~<br>诶? 怎么卡在什么 sill 那个地方不动了…. 看网速, 0~1k… ㄟ( ▔, ▔ )ㄏ<br>只好设置全局代理看看…. 不过貌似听说终端走不了 ss 代理? 反正每切一次都能跳一下, 实在跳不动了, 我只能 ctrl + C 断掉再来了…<br> <strong>注意: 断掉再重新安装的话会利用之前下载的那些缓存, 而不是从头下载</strong><br> <em>可还是慢的不行啊…</em><br> 于是乎, 我又找找有没有人这么慢的, 就找到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">这个博主</a>, 他是 Windows 系统, 不过也差不多啦, 里面说的在 coding 上也部署上去我准备也想试试. 里面说到了用国内淘宝的镜像来下载, 我这里的结果是_<em> ERROR xxxxxxxxx</em> 啥的, 不记得了, 好像意思是少了什么?? 看来是走不通<br> 然后, 又找到了<a href="http://www.jianshu.com/p/fd878edb95e7" target="_blank" rel="external">这个博主</a>, 对了, 是它提到了官方安装, 第一个那个没提到, 提到的是 Next 主题的官方安装, 这里用的是<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo --no-optional</div></pre></td></tr></table></figure></p>
 <p> 好像有好点吧, 但是还是有点慢, 就扔着不管了…反正就那么以上步奏折腾折腾, 断了重新, 再断再重新, 终于弄好了(◎_◎;)</p>
 <p> 嗯, 接下来再继续按第一个博主的弄, hexo init, npm install…<br> <strong>慢着…怎么 init 又好久…</strong><br> <strong>这里在自己的文件夹里 hexo init 的时候, 如果你要中断的话一定要清空文件夹里的东西或者删了文件夹重新建吧</strong><br> 因为这里中断的话, 再执行 hexo 命令它就不认了, 说这个文件夹没有班底 hexo, 大概是你断掉了以后 hexo 的管理和这个文件夹断了吧??</p>
 <p> 这样又反复弄了几次, 诶…终于好了…<br> npm install 也 OK ~~&lt;(▰˘◡˘▰)&gt;</p>
