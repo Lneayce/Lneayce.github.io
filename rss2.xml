@@ -8,8 +8,193 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>i almost there, hope to meet u again...~^~      如果这里速度慢的话可以访问 coding 的页面 http://lneayce.coding.me/Lneayce/</description>
-    <pubDate>Thu, 13 Oct 2016 02:50:45 GMT</pubDate>
+    <pubDate>Tue, 25 Oct 2016 16:54:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>use-of-git</title>
+      <link>https://Lneayce.github.io/2016/10/26/use-of-git/</link>
+      <guid>https://Lneayce.github.io/2016/10/26/use-of-git/</guid>
+      <pubDate>Tue, 25 Oct 2016 16:53:34 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;Git-和-SVN&quot;&gt;&lt;a href=&quot;#Git-和-SVN&quot; class=&quot;headerlink&quot; title=&quot;Git 和 SVN&quot;&gt;&lt;/a&gt;Git 和 SVN&lt;/h1&gt;&lt;p&gt;SVN 是 Git 之前比较常用的版本管理系统, 但是集中式版本的弊端逐渐显露, 在很多情况下受制比较多, 具体的对比的区别自行 Google 或 Wiki. &lt;/p&gt;
+&lt;p&gt;这里对尝试学习使用的总结和学习&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="Git-和-SVN"><a href="#Git-和-SVN" class="headerlink" title="Git 和 SVN"></a>Git 和 SVN</h1><p>SVN 是 Git 之前比较常用的版本管理系统, 但是集中式版本的弊端逐渐显露, 在很多情况下受制比较多, 具体的对比的区别自行 Google 或 Wiki. </p>
+<p>这里对尝试学习使用的总结和学习</p>
+<a id="more"></a>
+<h1 id="补充学习-对之前学习的巩固和提升认识"><a href="#补充学习-对之前学习的巩固和提升认识" class="headerlink" title="补充学习, 对之前学习的巩固和提升认识"></a>补充学习, 对之前学习的巩固和提升认识</h1><h2 id="待填入…"><a href="#待填入…" class="headerlink" title="待填入…."></a>待填入….</h2><h1 id="以下是之前零散的学习到的-但是后来觉得学习的还不够-所以有了以上的继续学习"><a href="#以下是之前零散的学习到的-但是后来觉得学习的还不够-所以有了以上的继续学习" class="headerlink" title="以下是之前零散的学习到的, 但是后来觉得学习的还不够, 所以有了以上的继续学习"></a>以下是之前零散的学习到的, 但是后来觉得学习的还不够, 所以有了以上的继续学习</h1><h2 id="SVN-的目录规范"><a href="#SVN-的目录规范" class="headerlink" title="SVN 的目录规范:"></a>SVN 的目录规范:</h2><pre><code>* trunk: 主干目录, 将主要的主线功能放这里
+* branch: 分支, 主线之外另外的功能使用, 开发完成后, 测试稳定之后, 可以合并到主干项目中
+* tags: 重大版本的备份,要开发另一个重大版本时, 要对之前一个稳定的版本备份, 当发现新版本不行, 要重头开始做的时候, 再把上次备份拿回 trunk 中
+* *
+* 按照项目组的不同, 在 trunk 目录下面在分几级文件, 平台划分下, 再细分, 如可以分移动组-&gt;iOS 组
+* 当 trunk 完成了这个版本的制作发布后, 经理需要将这个版本备份下: 在经历连接的仓库那里点击 tags-&gt;起名-&gt;保存位置(经理需要连接的是整个微博项目的仓库, 这样才能看到 trunk 和 tags 的目录)
+* 当发布稳定版本后根据市场反馈发现重大 bug, 同时2.0版本在着手进行开发, 需要开一个分支来修复 bug: 从 tags 中的稳定版本开一个分支到 branch, 然后给予指定人员权限, 那个人连接到这个分支的仓库地址.
+* 当 bug 在分支修复后, 提交到仓库, 经理需要将这个修复 bug 版本的 merge 到主线中的2.0来: 先将修复好的分支 checkout 下来, 查看效果, 再从 work_copy 从 trunk 处 merge 分支修改好的项目, 再 commit
+* 这时候别人在从 trunk上仓库 up 的东西就是合并了修复 bug 的版本, 这时连接分支的其他的可以断连了 
+* 之后经理还要做将修复好的版本 tags 备份, 生成一个新的版本, 之后将分支删除
+* 分支还可以在增加一个新功能而不影响主线开发的时候用, 开发完成后合并到主线, 发布后备份到 tags
+</code></pre><h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><pre><code>* 分布式版本控制工具, 和 SVN 不是一个量级的.比 SVN 快很多, 优点很多
+* 每个终端都是一个服务器, 都有自己的一个版本仓库, 平时的 commit 操作都是 Commit 到自己的本地仓库, 等需要时再 push 到公共仓库上, 或者说是其他的终端去, 刚开始可以从其他仓库 clone 下来一个仓库, 平时可以向其他仓库 pull 一些东西下来 
+* 使用工具: SourceTree, Github(针对自家 Github 平台), Xcode,
+</code></pre><h2 id="Git-的配置"><a href="#Git-的配置" class="headerlink" title="Git 的配置"></a>Git 的配置</h2><pre><code>* git init: 首先要在建立版本管理的地方初始化一个仓库, 然后就有了.git 文件夹, 里面装有这个仓库版本管理相关的所有东西
+* git config &quot;user.name&quot; 用户名  配置仓库用户, 以后追踪是谁改的, 谁的操作. 或者 cat config 这个文件来修改里面的内容来配置 
+* 建议配置邮箱, git 可以 办到在 Commit / push 之前发一个邮件(好像需要设置 git 的 hook)
+* --globle 参数是配置全局的意思, 会让这条配置配置在整个系统, 到时整个系统中 git 的 user.name 都是这条配置的
+* 要查看某个文件里的内容用 cat 文件
+* add-&gt;Commit 在 git 的版本控制下不能直接扔一个文件进去就行, 要添加的还需要 add, 再 Commit 才能在版本控制中看到这个文件(add 是添加到缓冲区, commit 才是添加到版本库)
+* commit: git 里必须要写注释才能提交, 而且不能为空, 后面跟提交的文件, 不写代表所有的都提交, 而且不用像 add 那样写&apos;.&apos;
+* add: 添加文件到当前仓库, 如果添加多个文件到仓库, 直接写&quot;.&quot;, &quot;add . &quot;代表将当前目录的所有文件添加一遍到仓库, 单个也写.更方便, 而且.是表示所有文件这个只有 add 有, 其他操作对应这个特性是什么都不写
+* *
+* git config 常用配置指令:
+* &quot;user.name&quot;   /   &quot;user.email&quot;
+* -l : 查看配置信息
+* -e : 编辑配置信息
+* alias : 设置指令的别名 : 
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config alias.别名 原指令名/<span class="string">"原指令语句"</span></div></pre></td></tr></table></figure>
+
+给 config 定义别名: git config alias.cfg config
+* 对于改动的文件, 直接提交也不行, 在 git 中, 所有修改和添加操作都要 add, add 可以可以看成是添加一个改动操作的意思, 它会把所有的改动操作添加到一个 state 暂缓区中, 在 commit 的时候一次提交到版本库里, 这样更快速, 像计算机缓存一样
+* log: 可以查看文件的修改日志,日志中 commit 后跟的是版本号, 是那次提交的 sha1值, 因为是分布式, 这样可以保证版本号唯一
+* log --pretty=oneline 可以打印漂亮点, 一次 commit 一行, 
+        21d58107677a609451d960e49d2af2d733e29b43  给 car.m 添加了 car 类
+        403ec06a81000aa69da57495904eb24eb4625309  添加了 car.m文件
+        ba14c4953e895b6f6bca85d02196e7ed16cf9162  添加了多个文件
+        60f8f8f21f450390ce10b739bf284c8589714348  添加一个 person.m 文件
+* 也可以起别名, 将一些配置设置指令配成一个指令, 来打印更好的日志格式:
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git cfg --global alias.lg <span class="string">"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt; %Creset' --abbrev-commit"</span></div></pre></td></tr></table></figure>
+
+ 这样全局的 git 的 log 都是这样的, 不用去重复配置
+</code></pre><h2 id="git-的版本回退"><a href="#git-的版本回退" class="headerlink" title="git 的版本回退"></a>git 的版本回退</h2><pre><code>* git 支持无限次后悔: RESET
+* reset --hard HEAD^  : 回到上一个版本, ^^:上上个版本, 还可以~1, 上一个, ~3, 上上上个版本, hard  指示强转回退, 可以起别名
+* 可以在不同的版本号间跳转: reset --hard 版本号
+* 如果不知道版本号, 可以用git reflog 查看之前的所有操作, 找到最后一次提交的操作回退
+* 写了一堆东西不想要了, 可以回退到当前最新版本号就可以了 HEAD
+</code></pre><h2 id="移除文件"><a href="#移除文件" class="headerlink" title="移除文件:"></a>移除文件:</h2><pre><code>* remove: rm 文件名, 这个 rm 操作一样是放操作进缓存区, 可以回退到 HEAD 来撤销 rm 操作, 如果 Commit 了, 就回退到上一版本, 再要回来就回退到最新版本号
+</code></pre><h2 id="缓冲区"><a href="#缓冲区" class="headerlink" title="缓冲区"></a>缓冲区</h2><pre><code>* 在对文件做了改变时, 要在 Commit 前将这些改点放到缓冲区, 提交时会把缓冲区的提交到版本库, 没有在缓冲区的提交不上去, 版本库对这些改变就没有记录了
+* state : 查看某个文件(或全部 )的状态, 没有进缓冲区的 change 会提示出来, 进缓冲区待提交的也会标出来, 颜色不一样
+
+* diff: 查看某个文件的修改状态, git diff, 放进缓存区后就看不到修改的状态了
+* config -e: 进入 vim 编辑配置文件
+</code></pre><h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理:"></a>工作原理:</h2><pre><code>* 工作原理:
+    * 工作区(Working Directory): 即平时我们开发所要动到的文件, 操作到的目录, 即非.git 的里那些而是我们自己建的东西
+    * 版本仓库(Repository): 即 git 给我们做版本控制的地方, 即.git 目录下的东西
+        &gt; 暂缓区(stage): 当文件做了修改时 add 到的缓冲区, 
+        &gt; 分支(master): git 自动创建的第一个分支, 默认一开始就在这个分支下进行版本控制
+        &gt; HEAD 指针: 用于指向当前分支, git branch. 查看当前分支
+
+当有改变时, 暂缓区是空的, 工作区的状态改变了, 要先 add. add 到版本库的stage 里, stage 里就有了当前工作区新做的改变, 在 commit 提交到HEAD 所指的分支版本库, commit 后暂缓区会清空. 而且工作区和分支东西一致后会显示 clean, 干净的.
+比如有新添加文件时, status 指令会提示Untracked files:, 证明这个文件没有在版本控制的追踪下,分支中没有这个文件,是新建的, -&gt; add 添加到暂缓区,Untracked files:修改已经进入暂缓区, 有待 commit 到分支中 -&gt;  1 file changed,成功在分支中添加了一个文件, 再差 status 会是working directory clean, 和分支追踪的文件没有什么异同
+当文件改动时,Changes not staged for commit: 文件的改动没有放暂缓区中待 commit,  -&gt; add. st 变为待提交, -&gt;commit -&gt; 成功
+</code></pre><h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><pre><code>* 自己搭建的话比较费时费力, 因为一般是搭建在 Linux 上的, 
+* 我们一般用公开的别人搭好的公共托管仓库, github, oschina,  coding
+* Github: -&gt; 右上角有个创建仓库, 
+              -&gt; readme 一定要选, 可以介绍你这个项目是做什么用的, 还有项目的一些描述, 使用方法等
+              -&gt; .gitignore 可以忽略掉不用提交的文件, 可以在这个文件里面编写匹配哪些文件是不需要提交的 
+              -&gt; 右边有个 HTTPS clone URL , 就是项目仓库的路径, 这样就可以给别人下载到自己的仓库
+              -&gt; 在当前 .git 所在的目录下, 使用 &apos;git remote add origin {这里是你的在 git 托管平台上创建项目的地址}&apos; 来添加当前 git 仓库锁指向的远程仓库, 这样之后我们 pull 和 push 就会对这个仓库进行读写, 建议先 pull 项目下来和当前本地的 merge 一下(对于 git@ 的地址来说可以, HTTPS 的地址只能 pull 操作不能 push, 因为缺少 sshkey 的认证), 或者可以先把网上的仓库 clone 到当前目录-&gt;git clone URL 再把项目文件夹放进这个目录, 这时工作区就可以用之前的操作, add. commit 到本地仓库, 
+              -&gt; 这时只是在本地分支有这些操作, 还需要 push 到远程仓库去,
+              -&gt; git push  ----然后首次会要求输入用户名密码, 就是 github 的用户名密码
+* 想要在自己电脑上 push 项目还需要一些设置, 这个在一开始就要配置了!
+    -&gt; git 远程是用 ssh 连接的, 需要把自己电脑上的 ssh keyes 添加到 github 的设置上, 表示只有这个 ssh keyes 所有者才能 push 代码, 只有配置了 key 在 github 上的电脑才能传东西, 以后参与开发的组员也是需要配置 key 到这个项目的 github 上
+    -&gt; 获取 sshkey: 在电脑上用终端在~/.ssh 里创建公钥私钥对, 
+    -&gt;命令: ssh-keygen -t rsa -C &quot;你的邮箱地址&quot; -&gt; 然后一直敲回车 -&gt;然后会在~/.ssh 目录下生成 ssh key 密钥对
+    -&gt; id_rsa : 私钥, 不可泄露
+    -&gt; id_rsa.pub : 公钥, 可以公开(将这个文件的内容粘贴到 Github 上)
+    -&gt; 利用 cat 可以查看文件内容
+    -&gt; 将pub 公钥粘贴到 gihub 上的 key 框中, add key.
+每次增加新东西, commit 在本地仓库了想一次性的传到服务器的话, 用 push, 
+其他组员第一次从服务器拿东西下来是用 clone拿到整个项目, 
+之后每次从服务器更新东西都是 pull, 拉下新的变动的东西, 
+用 github 客户端也可以办到以上和远程仓库同步
+现在 github 也可以用 https
+
+
+使用 oschina 和 coding 的好处是本地化更好一点, 私有项目免费1000个, 速度更快, 
+创建仓库的过程都差不多
+
+GitHub 有个 pullRequest 可以 fork 别人的项目, 燃火做一些改进后 pull Request 给作者, 看它会不会合并你的请求
+</code></pre>]]></content:encoded>
+      
+      <comments>https://Lneayce.github.io/2016/10/26/use-of-git/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Coredata 使用</title>
+      <link>https://Lneayce.github.io/2016/10/25/Coredata-%E4%BD%BF%E7%94%A8/</link>
+      <guid>https://Lneayce.github.io/2016/10/25/Coredata-%E4%BD%BF%E7%94%A8/</guid>
+      <pubDate>Tue, 25 Oct 2016 14:46:23 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Coredata 使用&lt;/p&gt;
+&lt;p&gt;简单的使用都可以从网上找到教程&lt;/p&gt;
+&lt;p&gt;根据教程做卡到的地方和 bug 记录: &lt;/p&gt;
+&lt;p&gt;stuck: 在设置实体时, 实体间有一对多的关系:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在属性那栏即右边工具栏 option+c
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Coredata 使用</p>
+<p>简单的使用都可以从网上找到教程</p>
+<p>根据教程做卡到的地方和 bug 记录: </p>
+<p>stuck: 在设置实体时, 实体间有一对多的关系:</p>
+<blockquote>
+<p>在属性那栏即右边工具栏 option+command+0打开, 最右边那标签下有选择 type, 选择 toMany 即可<br>stuck: 在改变了实体的一些属性后怎么更新?<br>直接在可视化中修改后, 新建subClass 文件, xcode 会自动更新对应的分类, 而类文件不变, 类文件不变就会有个问题, 在添加关系后, 因为是引用别的类, 但是自己的类头文件没有声明这个类会报错<br>stuck: 但是这样的话, 如果是在已经存有数据的情况下, 再修改模型, 会不会在存储中的模型图和新的对应不上, 那些更多的数据怎么办, 这时需要数据迁移<br><a href="http://www.jianshu.com/p/49872694e0b3" target="_blank" rel="external">http://www.jianshu.com/p/49872694e0b3</a><br><a href="https://objccn.io/issue-4-7/" target="_blank" rel="external">https://objccn.io/issue-4-7/</a><br><a href="http://www.bozhiyue.com/anroid/boke/2016/0602/173699.html" target="_blank" rel="external">http://www.bozhiyue.com/anroid/boke/2016/0602/173699.html</a><br><a href="https://github.com/ios122/MagicalRecord/blob/master/README.md" target="_blank" rel="external">关于第三方库 MagicRecord 的中文说明</a></p>
+</blockquote>]]></content:encoded>
+      
+      <comments>https://Lneayce.github.io/2016/10/25/Coredata-%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>sublimeText3 使用手记</title>
+      <link>https://Lneayce.github.io/2016/10/25/sublimeText3Handy/</link>
+      <guid>https://Lneayce.github.io/2016/10/25/sublimeText3Handy/</guid>
+      <pubDate>Tue, 25 Oct 2016 14:44:33 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;sublime3的使用提升 &lt;/p&gt;
+&lt;p&gt;关于 sublime 的介绍, 已经很多了, 不累赘了. 这里就记录自己使用的积累&lt;/p&gt;
+&lt;p&gt;如果不想提醒, 可以搜注册码, 偶尔的提醒也不会对肯定不会买的人起效, 但是有钱还是应该支持的&lt;/p&gt;
+&lt;p&gt;安装了中文本地化插件,
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>sublime3的使用提升 </p>
+<p>关于 sublime 的介绍, 已经很多了, 不累赘了. 这里就记录自己使用的积累</p>
+<p>如果不想提醒, 可以搜注册码, 偶尔的提醒也不会对肯定不会买的人起效, 但是有钱还是应该支持的</p>
+<p>安装了中文本地化插件, 目前没什么问题, 之前装插件的时候, 不知道是装了哪个, 会造成不能使用 packageControl 的情况, 卸载了还不行, 我是卸载后再删掉插件的目录重装了才行, 估计只要删掉某个插件就行<br><a href="~/Library/Application Support/Sublime Text 3">目录</a><br><a href="http://www.imooc.com/article/7727" target="_blank" rel="external">别人配置的手记, 粗略浏览感觉不错</a><br><a href="https://www.scislab.com/zh-hans/blog/sublime-text-te-se-cha-jian-tui-jian-gua-yong-ren-qun-python-java/" target="_blank" rel="external">手记</a><br>插件:</p>
+<ul>
+<li>中文本地化</li>
+<li><a href="http://www.iteye.com/news/27580" target="_blank" rel="external">Emmet</a></li>
+<li>markdown:<ul>
+<li>markdown editing</li>
+<li>OmniMarkupPreviewer</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+      
+      <comments>https://Lneayce.github.io/2016/10/25/sublimeText3Handy/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>文章开篇</title>
+      <link>https://Lneayce.github.io/2016/10/13/front-of-all/</link>
+      <guid>https://Lneayce.github.io/2016/10/13/front-of-all/</guid>
+      <pubDate>Thu, 13 Oct 2016 03:33:23 GMT</pubDate>
+      <description>
+      
+        &lt;h1 id=&quot;准备上传之前的文章&quot;&gt;&lt;a href=&quot;#准备上传之前的文章&quot; class=&quot;headerlink&quot; title=&quot;准备上传之前的文章&quot;&gt;&lt;/a&gt;准备上传之前的文章&lt;/h1&gt;&lt;p&gt;最近才搭建起来了这个博客, 之前学习还有生活中想到的写的一些东西, 慢慢传到这里来~
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="准备上传之前的文章"><a href="#准备上传之前的文章" class="headerlink" title="准备上传之前的文章"></a>准备上传之前的文章</h1><p>最近才搭建起来了这个博客, 之前学习还有生活中想到的写的一些东西, 慢慢传到这里来~ 作为一个分享空间, 拍砖的拍砖, 认同的点赞~ 哈哈哈哈</p>]]></content:encoded>
+      
+      <comments>https://Lneayce.github.io/2016/10/13/front-of-all/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>这几天对搭建这个 hexo 博客汇总一下帖子</title>
@@ -175,7 +360,12 @@
 <li>.</li>
 <li>.</li>
 </ul>
-<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
+<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><ul>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
 <h1 id="好了-开始"><a href="#好了-开始" class="headerlink" title="好了, 开始."></a>好了, 开始.</h1><ol>
 <li>因为我是不同的邮箱注册了 coding, 所以好像我要重新生成个 sshkey…</li>
 <li>然后添加到 coding 的 sshkey 中</li>
@@ -191,6 +381,14 @@
 <li>终于到了开启 page 服务的时候啦~~, 嗯, 它那个开启分支默认填的是 coding-pages, 如果你建的博客项目是在 master 分支的, 要改成 master!! 反正要和你项目的分支一样!</li>
 </ol>
 <h2 id="测试一下"><a href="#测试一下" class="headerlink" title="测试一下~"></a>测试一下~</h2><p>进入<a href="http://lneayce.coding.me/Lneayce/" target="_blank" rel="external">coding 的博客</a>好的! 成功了!<br>然后再看自己的 <a href="https://lneayce.github.io/">github 上的地址</a>嗯, 很好~</p>
+<h3 id="多开博客"><a href="#多开博客" class="headerlink" title="多开博客"></a>多开博客</h3><p>另外, 有开小号或者帮妹纸搭建管理的, 可能是需要有几个 github 帐号, 按照上面的话, 还需要有 coding 帐号, 那么, 当一台电脑访问两个不同的网站时, 对应两个不同网站的帐号就是按照上面的, 这多出来一份博客要怎么弄?</p>
+<ol>
+<li>首先要给新一个人按照上面的步骤配置好 SSHKeys, 一样是每个网站各一份, 上传好公钥后, 本地主要设置的是 config 文件, 我们要让ssh 客户端知道在对应这个域名主机时是需要哪个密钥, 我们就要对这些主机设置别名, 而且在给博客添加 git 远程地址时, 域名的地方要换成我们起的别名, </li>
+</ol>
+<p><a href="http://notes.seirhsiao.com/2016/01/24/2014-09-30-github-multiple-account-and-multiple-repository/" target="_blank" rel="external">如何同一台电脑配置多个git或github账号</a></p>
+<p>我的话就是在原来之前设置的那些不改动, 因为已经设置过相应的站点了, 再改动恐怕还要改博客文件夹配置文件中仓库的主机域名吧. 所以我们要添加哪个人的一个博客, 就在主机域名前加上前缀好了, 测试 ssh -T git@前缀.coding.net 能通就行, 也测试下之前原来的两个吧, 以免在设置的时候有误操作造成问题.</p>
+<p>理解了帖子里面的分析, 说白了就是会根据 config 文件里Host 名字来找对应的 HostName 替换上去, 让后使用那段指定的私钥来连接所以, 在 git 测试连接的时候, 那个git@Host 就行了, </p>
+<p>在给 hexo 的_config 设置仓库地址时, 赋值下来的地址也要把那个@这个域名:换成我们设置的别名, 到时候会自动替换回去, 并用指定的私钥连接</p>
 <h1 id="至此完成"><a href="#至此完成" class="headerlink" title="至此完成~"></a>至此完成~</h1>]]></content:encoded>
       
       <comments>https://Lneayce.github.io/2016/10/11/put-blog-both-coding-github/#disqus_thread</comments>

@@ -68,7 +68,7 @@
 <meta property="og:site_name" content="Shambels by N">
 <meta property="og:description" content="前言在上一篇博文中, 搭建成了 hexo 博客, 设置好了 Next 主题但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)
  国内两个比较好的代码托管的网站应该就是 oschina 和 coding 了吧, 这里先选 coding 来另作部署, 因为…..它的配色我还是挺喜欢的2333333">
-<meta property="og:updated_time" content="2016-10-13T02:50:00.000Z">
+<meta property="og:updated_time" content="2016-10-25T16:47:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署 hexo 到 github 和 coding 上">
 <meta name="twitter:description" content="前言在上一篇博文中, 搭建成了 hexo 博客, 设置好了 Next 主题但是, 你懂的, 功夫网, 有时候 github 上打开 .io 会是挺慢的, 所以部署到国内的话会好不少(应该)
@@ -368,7 +368,12 @@
 <li>.</li>
 <li>.</li>
 </ul>
-<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
+<h1 id="完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><a href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子" class="headerlink" title="完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子"></a><em>完整的步奏汇总在: <a href="/2016/10/13/summarize-of-create-hexoblog">这几天对搭建这个 hexo 博客汇总一下帖子</a></em></h1><ul>
+<li>.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<h2 id="找资料"><a href="#找资料" class="headerlink" title="找资料"></a>找资料</h2><p>一开始肯定是看有没有哪个前辈做过啦~, 上一篇说到了<a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">一个博主</a>已经做了, 所以先参照他的来弄弄, 然后还有一个博主的也可以看看, 写的也挺详细: <a href="http://shomy.top/2016/03/03/hexo-in-coding-github/" target="_blank" rel="external">hexo同时部署到coding(gitcafe)和github</a></p>
 <h1 id="好了-开始"><a href="#好了-开始" class="headerlink" title="好了, 开始."></a>好了, 开始.</h1><ol>
 <li>因为我是不同的邮箱注册了 coding, 所以好像我要重新生成个 sshkey…</li>
 <li>然后添加到 coding 的 sshkey 中</li>
@@ -384,6 +389,14 @@
 <li>终于到了开启 page 服务的时候啦~~, 嗯, 它那个开启分支默认填的是 coding-pages, 如果你建的博客项目是在 master 分支的, 要改成 master!! 反正要和你项目的分支一样!</li>
 </ol>
 <h2 id="测试一下"><a href="#测试一下" class="headerlink" title="测试一下~"></a>测试一下~</h2><p>进入<a href="http://lneayce.coding.me/Lneayce/" target="_blank" rel="external">coding 的博客</a>好的! 成功了!<br>然后再看自己的 <a href="https://lneayce.github.io/">github 上的地址</a>嗯, 很好~</p>
+<h3 id="多开博客"><a href="#多开博客" class="headerlink" title="多开博客"></a>多开博客</h3><p>另外, 有开小号或者帮妹纸搭建管理的, 可能是需要有几个 github 帐号, 按照上面的话, 还需要有 coding 帐号, 那么, 当一台电脑访问两个不同的网站时, 对应两个不同网站的帐号就是按照上面的, 这多出来一份博客要怎么弄?</p>
+<ol>
+<li>首先要给新一个人按照上面的步骤配置好 SSHKeys, 一样是每个网站各一份, 上传好公钥后, 本地主要设置的是 config 文件, 我们要让ssh 客户端知道在对应这个域名主机时是需要哪个密钥, 我们就要对这些主机设置别名, 而且在给博客添加 git 远程地址时, 域名的地方要换成我们起的别名, </li>
+</ol>
+<p><a href="http://notes.seirhsiao.com/2016/01/24/2014-09-30-github-multiple-account-and-multiple-repository/" target="_blank" rel="external">如何同一台电脑配置多个git或github账号</a></p>
+<p>我的话就是在原来之前设置的那些不改动, 因为已经设置过相应的站点了, 再改动恐怕还要改博客文件夹配置文件中仓库的主机域名吧. 所以我们要添加哪个人的一个博客, 就在主机域名前加上前缀好了, 测试 ssh -T git@前缀.coding.net 能通就行, 也测试下之前原来的两个吧, 以免在设置的时候有误操作造成问题.</p>
+<p>理解了帖子里面的分析, 说白了就是会根据 config 文件里Host 名字来找对应的 HostName 替换上去, 让后使用那段指定的私钥来连接所以, 在 git 测试连接的时候, 那个git@Host 就行了, </p>
+<p>在给 hexo 的_config 设置仓库地址时, 赋值下来的地址也要把那个@这个域名:换成我们设置的别名, 到时候会自动替换回去, 并用指定的私钥连接</p>
 <h1 id="至此完成"><a href="#至此完成" class="headerlink" title="至此完成~"></a>至此完成~</h1>
       
     </div>
@@ -517,7 +530,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -525,7 +538,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分類</span>
               </a>
             </div>
@@ -534,7 +547,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>
@@ -590,7 +603,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><span class="nav-number">2.</span> <span class="nav-text">完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#找资料"><span class="nav-number">2.1.</span> <span class="nav-text">找资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#好了-开始"><span class="nav-number">3.</span> <span class="nav-text">好了, 开始.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试一下"><span class="nav-number">3.1.</span> <span class="nav-text">测试一下~</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#至此完成"><span class="nav-number">4.</span> <span class="nav-text">至此完成~</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#完整的步奏汇总在-这几天对搭建这个-hexo-博客汇总一下帖子"><span class="nav-number">2.</span> <span class="nav-text">完整的步奏汇总在: 这几天对搭建这个 hexo 博客汇总一下帖子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#找资料"><span class="nav-number">2.1.</span> <span class="nav-text">找资料</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#好了-开始"><span class="nav-number">3.</span> <span class="nav-text">好了, 开始.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试一下"><span class="nav-number">3.1.</span> <span class="nav-text">测试一下~</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#多开博客"><span class="nav-number">3.1.1.</span> <span class="nav-text">多开博客</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#至此完成"><span class="nav-number">4.</span> <span class="nav-text">至此完成~</span></a></li></ol></div>
             
           </div>
         </section>

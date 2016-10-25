@@ -276,6 +276,521 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/26/use-of-git/" itemprop="url">
+                  use-of-git
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-26T00:53:34+08:00" content="2016-10-26">
+              2016-10-26
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/26/use-of-git/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/26/use-of-git/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/26/use-of-git/" class="leancloud_visitors" data-flag-title="use-of-git">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">閱讀次數 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="Git-和-SVN"><a href="#Git-和-SVN" class="headerlink" title="Git 和 SVN"></a>Git 和 SVN</h1><p>SVN 是 Git 之前比较常用的版本管理系统, 但是集中式版本的弊端逐渐显露, 在很多情况下受制比较多, 具体的对比的区别自行 Google 或 Wiki. </p>
+<p>这里对尝试学习使用的总结和学习</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/26/use-of-git/#more" rel="contents">
+              閱讀全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/25/Coredata-使用/" itemprop="url">
+                  Coredata 使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-25T22:46:23+08:00" content="2016-10-25">
+              2016-10-25
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/25/Coredata-使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/25/Coredata-使用/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/25/Coredata-使用/" class="leancloud_visitors" data-flag-title="Coredata 使用">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">閱讀次數 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Coredata 使用</p>
+<p>简单的使用都可以从网上找到教程</p>
+<p>根据教程做卡到的地方和 bug 记录: </p>
+<p>stuck: 在设置实体时, 实体间有一对多的关系:</p>
+<blockquote>
+<p>在属性那栏即右边工具栏 option+command+0打开, 最右边那标签下有选择 type, 选择 toMany 即可<br>stuck: 在改变了实体的一些属性后怎么更新?<br>直接在可视化中修改后, 新建subClass 文件, xcode 会自动更新对应的分类, 而类文件不变, 类文件不变就会有个问题, 在添加关系后, 因为是引用别的类, 但是自己的类头文件没有声明这个类会报错<br>stuck: 但是这样的话, 如果是在已经存有数据的情况下, 再修改模型, 会不会在存储中的模型图和新的对应不上, 那些更多的数据怎么办, 这时需要数据迁移<br><a href="http://www.jianshu.com/p/49872694e0b3" target="_blank" rel="external">http://www.jianshu.com/p/49872694e0b3</a><br><a href="https://objccn.io/issue-4-7/" target="_blank" rel="external">https://objccn.io/issue-4-7/</a><br><a href="http://www.bozhiyue.com/anroid/boke/2016/0602/173699.html" target="_blank" rel="external">http://www.bozhiyue.com/anroid/boke/2016/0602/173699.html</a><br><a href="https://github.com/ios122/MagicalRecord/blob/master/README.md" target="_blank" rel="external">关于第三方库 MagicRecord 的中文说明</a></p>
+</blockquote>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/25/sublimeText3Handy/" itemprop="url">
+                  sublimeText3 使用手记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-25T22:44:33+08:00" content="2016-10-25">
+              2016-10-25
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具手记/" itemprop="url" rel="index">
+                    <span itemprop="name">工具手记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/25/sublimeText3Handy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/25/sublimeText3Handy/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/25/sublimeText3Handy/" class="leancloud_visitors" data-flag-title="sublimeText3 使用手记">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">閱讀次數 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>sublime3的使用提升 </p>
+<p>关于 sublime 的介绍, 已经很多了, 不累赘了. 这里就记录自己使用的积累</p>
+<p>如果不想提醒, 可以搜注册码, 偶尔的提醒也不会对肯定不会买的人起效, 但是有钱还是应该支持的</p>
+<p>安装了中文本地化插件, 目前没什么问题, 之前装插件的时候, 不知道是装了哪个, 会造成不能使用 packageControl 的情况, 卸载了还不行, 我是卸载后再删掉插件的目录重装了才行, 估计只要删掉某个插件就行<br><a href="~/Library/Application Support/Sublime Text 3">目录</a><br><a href="http://www.imooc.com/article/7727" target="_blank" rel="external">别人配置的手记, 粗略浏览感觉不错</a><br><a href="https://www.scislab.com/zh-hans/blog/sublime-text-te-se-cha-jian-tui-jian-gua-yong-ren-qun-python-java/" target="_blank" rel="external">手记</a><br>插件:</p>
+<ul>
+<li>中文本地化</li>
+<li><a href="http://www.iteye.com/news/27580" target="_blank" rel="external">Emmet</a></li>
+<li>markdown:<ul>
+<li>markdown editing</li>
+<li>OmniMarkupPreviewer</li>
+</ul>
+</li>
+</ul>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/13/front-of-all/" itemprop="url">
+                  文章开篇
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-10-13T11:33:23+08:00" content="2016-10-13">
+              2016-10-13
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/本站/" itemprop="url" rel="index">
+                    <span itemprop="name">本站</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/13/front-of-all/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/13/front-of-all/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/13/front-of-all/" class="leancloud_visitors" data-flag-title="文章开篇">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">閱讀次數 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="准备上传之前的文章"><a href="#准备上传之前的文章" class="headerlink" title="准备上传之前的文章"></a>准备上传之前的文章</h1><p>最近才搭建起来了这个博客, 之前学习还有生活中想到的写的一些东西, 慢慢传到这里来~ 作为一个分享空间, 拍砖的拍砖, 认同的点赞~ 哈哈哈哈</p>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/13/summarize-of-create-hexoblog/" itemprop="url">
                   这几天对搭建这个 hexo 博客汇总一下帖子
                 </a>
@@ -965,6 +1480,25 @@
           </span>
 
           
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/本站/" itemprop="url" rel="index">
+                    <span itemprop="name">本站</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -1075,7 +1609,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
@@ -1083,7 +1617,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分類</span>
               </a>
             </div>
@@ -1092,7 +1626,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">標籤</span>
               </a>
             </div>

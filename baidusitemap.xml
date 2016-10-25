@@ -4,6 +4,129 @@
 
     
   <url>
+    <loc>https://Lneayce.github.io/2016/10/26/use-of-git/</loc>
+    <lastmod>2016-10-25T16:54:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>use-of-git</title>
+        <pubTime>2016-10-25T16:53:34.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Lneayce.github.io/2016/10/25/sublimeText3Handy/</loc>
+    <lastmod>2016-10-25T16:50:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>sublimeText3 使用手记</title>
+        <pubTime>2016-10-25T14:44:33.000Z</pubTime>
+        
+        <tag>sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具手记" url="https://Lneayce.github.io/categories/%E5%B7%A5%E5%85%B7%E6%89%8B%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Lneayce.github.io/2016/10/11/put-blog-both-coding-github/</loc>
+    <lastmod>2016-10-25T16:47:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>部署 hexo 到 github 和 coding 上</title>
+        <pubTime>2016-10-11T08:14:42.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>coding</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Lneayce.github.io/2016/10/25/Coredata-%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2016-10-25T14:51:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Coredata 使用</title>
+        <pubTime>2016-10-25T14:46:23.000Z</pubTime>
+        
+        <tag>持久化</tag>
+         
+        <tag>CoreData</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS" url="https://Lneayce.github.io/categories/iOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Lneayce.github.io/2016/10/13/front-of-all/</loc>
+    <lastmod>2016-10-13T03:43:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>文章开篇</title>
+        <pubTime>2016-10-13T03:33:23.000Z</pubTime>
+        
+        <tag>开始</tag>
+         
+        <tag>文章</tag>
+         
+        <tag>过去</tag>
+         
+         
+           
+             
+              <breadCrumb title="本站" url="https://Lneayce.github.io/categories/%E6%9C%AC%E7%AB%99/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Lneayce.github.io/2016/10/10/hello-world/</loc>
+    <lastmod>2016-10-13T03:43:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hi, There ^~^</title>
+        <pubTime>2016-10-10T09:24:46.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="本站" url="https://Lneayce.github.io/categories/%E6%9C%AC%E7%AB%99/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://Lneayce.github.io/2016/10/13/summarize-of-create-hexoblog/</loc>
     <lastmod>2016-10-13T02:50:45.000Z</lastmod>
     <data>
@@ -44,30 +167,6 @@
         <tag>搜索不到博客</tag>
          
         <tag>验证站点文件</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://Lneayce.github.io/2016/10/11/put-blog-both-coding-github/</loc>
-    <lastmod>2016-10-13T02:50:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>部署 hexo 到 github 和 coding 上</title>
-        <pubTime>2016-10-11T08:14:42.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
-        <tag>coding</tag>
          
          
            
@@ -124,21 +223,6 @@
              
               <breadCrumb title="博客搭建使用" url="https://Lneayce.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BD%BF%E7%94%A8/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://Lneayce.github.io/2016/10/10/hello-world/</loc>
-    <lastmod>2016-10-11T09:48:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hi, There ^~^</title>
-        <pubTime>2016-10-10T09:24:46.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
